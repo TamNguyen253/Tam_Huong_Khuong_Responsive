@@ -1,0 +1,52 @@
+/* ============================== common ============================== */
+a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 250px;
+}
+
+input:focus {
+    border-color: #ccc !important;
+}
+
+/* ============================== categories ============================== */
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+.categories .item:hover {
+    background: #ffffff;
+}
+
+.item {
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* ==================================== main ====================================== */
+.link-item {
+    color: black;
+}
+
+/* ==================================== footer ====================================== */
+footer a:hover {
+    color: blue !important;
+}
