@@ -13,7 +13,19 @@ input:focus {
     border-color: #ccc !important;
 }
 
-/* ============================== categories ============================== */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* ============================== header ============================== */
+/* ======================== categories ======================== */
 .dropdown-toggle:hover .dropdown-menu {
     display: block;
 }
@@ -30,20 +42,98 @@ input:focus {
     transform: translateY(-5px);
 }
 
-.line-clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
+.link-item {
+    color: black;
 }
 
-.break-all {
-    word-break: break-all;
+.social-btns {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+}
+
+#scrollTopBtn {
+    background: none;
+}
+
+.fm-categories:hover {
+    background: #ffffff;
+}
+
+.fm-categories {
+    position: relative;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    left: 13px;
+    width: 1320px;
+    height: 200px;
+    background: white;
+}
+
+.fm-menu-lap {
+    position: absolute;
+    left: -152px;
+}
+
+.fm-menu-accessory {
+    position: absolute;
+    left: -317px;
+}
+
+.fm-menu-smartwatch {
+    position: absolute;
+    left: -482px;
+}
+
+.fm-menu-watch {
+    position: absolute;
+    left: -647px;
+}
+
+.fm-tablet-lap {
+    position: absolute;
+    left: -812px;
+}
+
+.fm-menu-monitor {
+    position: absolute;
+    left: -977px;
+}
+
+.fm-menu-sim {
+    position: absolute;
+    left: -1142px;
+}
+
+.fm-categories:hover .menu-dropdown {
+    display: flex;
+}
+
+.menu-dropdown a {
+    color: black;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.menu-dropdown a:hover {
+    color: blue;
+}
+
+.menu-mobi .nav-item:hover {
+    background: #fff;
+}
+
+/* banner */
+.main-banner {
+    margin-top: 160px;
 }
 
 /* ==================================== main ====================================== */
-.link-item {
-    color: black;
+.fm-buynow-btn {
+    width: 48%;
 }
 
 /* ==================================== footer ====================================== */

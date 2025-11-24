@@ -22,12 +22,15 @@
 
         <!-- style css -->
         <link rel="stylesheet" href="assets/css/index.css" />
+
+        <!-- responsive css -->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
         <title>Document</title>
     </head>
 
     <body>
         <!-- header -->
-        <header>
+        <header class="fixed-top">
             <!-- top bar -->
             <section class="top-bar bg bg-primary">
                 <div class="container">
@@ -36,17 +39,17 @@
                         <div class="top-bar-left">
                             <a class="store-branch me-3 small">
                                 <i class="bi bi-geo-alt pe-1" style="color: #fff"></i>
-                                <span class="title text-white">Chi nhánh cửa hàng</span>
+                                <span class="title text-white d-none d-md-inline-block">Chi nhánh cửa hàng</span>
                             </a>
 
                             <a class="look-up-orders me-3 small">
                                 <i class="bi bi-truck pe-1" style="color: #fff"></i>
-                                <span class="title text-white">Tra cứu đơn hàng</span>
+                                <span class="title text-white d-none d-md-inline-block">Tra cứu đơn hàng</span>
                             </a>
 
                             <a class="guarantee me-3 small">
                                 <i class="bi bi-tools pe-1" style="color: #fff"></i>
-                                <span class="title text-white">Dịch vụ bảo hành</span>
+                                <span class="title text-white d-none d-md-inline-block">Dịch vụ bảo hành</span>
                             </a>
                         </div>
 
@@ -82,7 +85,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- search form -->
-                        <form class="d-flex align-items-center" role="search" style="width: 100%; max-width: 750px">
+                        <form class="d-flex align-items-center mt-2 mt-lg-0" role="search" style="width: 100%; max-width: 750px">
                             <div class="input-group">
                                 <a class="input-group-text bg-white border-end-0">
                                     <i class="bi bi-search text-secondary"></i>
@@ -96,17 +99,88 @@
                         </form>
 
                         <!-- login & cart -->
-                        <ul class="navbar-nav ms-auto mb-lg-0">
+                        <ul class="login-cart navbar-nav ms-auto mb-lg-0 flex-row">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
                                     <i class="bi bi-person"></i>
                                     <span>Đăng nhập</span>
                                 </a>
                             </li>
                             <li class="nav-item ms-3">
-                                <a class="nav-link active" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
                                     <i class="bi bi-bag"></i>
                                     <span>Giỏ hàng</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- dropdown menu -->
+                        <ul class="menu-mobi navbar-nav ms-auto mb-lg-0 d-lg-none">
+                            <!-- item 1 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
+                                        <path
+                                            fill="#000000"
+                                            d="M144 128C144 92.7 172.7 64 208 64L432 64C467.3 64 496 92.7 496 128L496 512C496 547.3 467.3 576 432 576L208 576C172.7 576 144 547.3 144 512L144 128zM256 504C256 517.3 266.7 528 280 528L360 528C373.3 528 384 517.3 384 504C384 490.7 373.3 480 360 480L280 480C266.7 480 256 490.7 256 504zM432 128L208 128L208 432L432 432L432 128z"
+                                        />
+                                    </svg>
+                                    <span>Điện thoại</span>
+                                </a>
+                            </li>
+                            <!-- item 2 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
+                                        <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            fill="#000000"
+                                            d="M128 96C92.7 96 64 124.7 64 160L64 400L128 400L128 160L512 160L512 400L576 400L576 160C576 124.7 547.3 96 512 96L128 96zM19.2 448C8.6 448 0 456.6 0 467.2C0 509.6 34.4 544 76.8 544L563.2 544C605.6 544 640 509.6 640 467.2C640 456.6 631.4 448 620.8 448L19.2 448z"
+                                        />
+                                    </svg>
+                                    <span>Laptop</span>
+                                </a>
+                            </li>
+                            <!-- item 3 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <i class="bi bi-headphones"></i>
+                                    <span>Phụ kiện</span>
+                                </a>
+                            </li>
+                            <!-- item 4 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <i class="bi bi-smartwatch"></i>
+                                    <span>SmartWatch</span>
+                                </a>
+                            </li>
+                            <!-- item 5 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <i class="bi bi-watch"></i>
+                                    <span>Đồng hồ</span>
+                                </a>
+                            </li>
+                            <!-- item 6 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <i class="bi bi-tablet-landscape"></i>
+                                    <span>Tablet</span>
+                                </a>
+                            </li>
+                            <!-- item 7 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <i class="bi bi-pc-display-horizontal"></i>
+                                    <span>Màn hình</span>
+                                </a>
+                            </li>
+                            <!-- item 8 -->
+                            <li class="nav-item">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <i class="bi bi-sim"></i>
+                                    <span>Sim, thẻ cào</span>
                                 </a>
                             </li>
                         </ul>
@@ -115,12 +189,12 @@
             </nav>
 
             <!-- categories -->
-            <section class="categories bg bg-body-tertiary">
+            <section class="categories bg bg-body-tertiary d-none d-lg-block">
                 <div class="container">
                     <div class="row text-center">
                         <!-- phone -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 pb-3 pt-2 item w-100 w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 pb-3 pt-2 w-100 w-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
                                     <path
                                         fill="#000000"
@@ -129,11 +203,55 @@
                                 </svg>
                                 <span>Điện thoại</span>
                             </a>
+
+                            <!-- menu phone dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Hãng điện thoại</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">iPhone</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href=""> OPPO</a></li>
+                                        <li><a href="">TECNO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Mức giá điện thoại</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Dưới 2 triệu</a></li>
+                                        <li><a href="">Từ 2 - 4 triệu</a></li>
+                                        <li><a href="">Từ 4 - 7 triệu</a></li>
+                                        <li><a href="">Từ 7 - 13 triệu</a></li>
+                                        <li><a href="">Từ 13 - 20 triệu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Điện thoại HOT</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">iPhone 17 MỚI</a></li>
+                                        <li><a href="">iPhone Air MỚI</a></li>
+                                        <li><a href="">iPhone 16</a></li>
+                                        <li><a href="">Galaxy Z Fold7 MỚI</a></li>
+                                        <li><a href="">S25 Ultra</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Hãng máy tính bảng</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">iPad</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">OPPO</a></li>
+                                        <li><a href="">TECNO</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Laptop -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 item w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
                                     <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                                     <path
@@ -143,53 +261,361 @@
                                 </svg>
                                 <span>Laptop</span>
                             </a>
+                            <!-- menu laptop dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between fm-menu-lap">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Thương hiệu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple (Macbook)</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">Asus</a></li>
+                                        <li><a href="">Dell</a></li>
+                                        <li><a href="">HP</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Nhu cầu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop Gaming</a></li>
+                                        <li><a href="">Laptop AI</a></li>
+                                        <li><a href="">Laptop đồ họa</a></li>
+                                        <li><a href="">Laptop Sinh viên</a></li>
+                                        <li><a href="">Laptop Văn Phòng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Cấu hình</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop i5</a></li>
+                                        <li><a href="">Laptop i7</a></li>
+                                        <li><a href="">Laptop i9</a></li>
+                                        <li><a href="">Laptop Ryzen 5</a></li>
+                                        <li><a href="">Laptop Ryzen 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Laptop HP</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">HP OmniBook</a></li>
+                                        <li><a href="">HP Omen</a></li>
+                                        <li><a href="">HP Victus</a></li>
+                                        <li><a href="">HP Pavilion</a></li>
+                                        <li><a href="">HP Probook</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- accessory -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 item w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-headphones"></i>
                                 <span>Phụ kiện</span>
                             </a>
+
+                            <!-- menu accessory dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between fm-menu-accessory">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Loại đồng hồ</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Đồng hồ thông minh</a></li>
+                                        <li><a href="">Vòng đeo tay thông minh</a></li>
+                                        <li><a href="">Đồng hồ định vị trẻ em</a></li>
+                                        <li><a href="">Dây đeo</a></li>
+                                        <li><a href="">Apple Watch</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Chọn theo thương hiệu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple Watch</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">Huawei HOT</a></li>
+                                        <li><a href="">Coros</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Camera</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Camera an ninh</a></li>
+                                        <li><a href="">Camera hành trình</a></li>
+                                        <li><a href="">Action Camera</a></li>
+                                        <li><a href="">Camera AI MỚI</a></li>
+                                        <li><a href="">Gimbal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Sản phẩm nổi bật</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple Watch Series 11 HOT</a></li>
+                                        <li><a href="">Apple Watch SE 3 MỚI</a></li>
+                                        <li><a href="">Apple Watch Ultra 3 MỚI</a></li>
+                                        <li><a href="">Samsung Galaxy Watch 8</a></li>
+                                        <li><a href="">Huawei Watch GT 6 HOT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- smartwatch -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 item w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-smartwatch"></i>
                                 <span>SmartWatch</span>
                             </a>
+
+                            <!-- menu smartwatch dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between fm-menu-smartwatch">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Thương hiệu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple (Macbook)</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">Asus</a></li>
+                                        <li><a href="">Dell</a></li>
+                                        <li><a href="">HP</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Nhu cầu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop Gaming</a></li>
+                                        <li><a href="">Laptop AI</a></li>
+                                        <li><a href="">Laptop đồ họa</a></li>
+                                        <li><a href="">Laptop Sinh viên</a></li>
+                                        <li><a href="">Laptop Văn Phòng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Cấu hình</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop i5</a></li>
+                                        <li><a href="">Laptop i7</a></li>
+                                        <li><a href="">Laptop i9</a></li>
+                                        <li><a href="">Laptop Ryzen 5</a></li>
+                                        <li><a href="">Laptop Ryzen 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Laptop HP</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">HP OmniBook</a></li>
+                                        <li><a href="">HP Omen</a></li>
+                                        <li><a href="">HP Victus</a></li>
+                                        <li><a href="">HP Pavilion</a></li>
+                                        <li><a href="">HP Probook</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- watch -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 item w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-watch"></i>
                                 <span>Đồng hồ</span>
                             </a>
+
+                            <!-- menu watch dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between fm-menu-watch">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Hãng điện thoại</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">iPhone</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href=""> OPPO</a></li>
+                                        <li><a href="">TECNO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Mức giá điện thoại</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Dưới 2 triệu</a></li>
+                                        <li><a href="">Từ 2 - 4 triệu</a></li>
+                                        <li><a href="">Từ 4 - 7 triệu</a></li>
+                                        <li><a href="">Từ 7 - 13 triệu</a></li>
+                                        <li><a href="">Từ 13 - 20 triệu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Điện thoại HOT</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">iPhone 17 MỚI</a></li>
+                                        <li><a href="">iPhone Air MỚI</a></li>
+                                        <li><a href="">iPhone 16</a></li>
+                                        <li><a href="">Galaxy Z Fold7 MỚI</a></li>
+                                        <li><a href="">S25 Ultra</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Hãng máy tính bảng</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">iPad</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">OPPO</a></li>
+                                        <li><a href="">TECNO</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- tablet -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 item w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-tablet-landscape"></i>
                                 <span>Tablet</span>
                             </a>
+
+                            <!-- menu tablet dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between fm-tablet-lap">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Thương hiệu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple (Macbook)</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">Asus</a></li>
+                                        <li><a href="">Dell</a></li>
+                                        <li><a href="">HP</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Nhu cầu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop Gaming</a></li>
+                                        <li><a href="">Laptop AI</a></li>
+                                        <li><a href="">Laptop đồ họa</a></li>
+                                        <li><a href="">Laptop Sinh viên</a></li>
+                                        <li><a href="">Laptop Văn Phòng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Cấu hình</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop i5</a></li>
+                                        <li><a href="">Laptop i7</a></li>
+                                        <li><a href="">Laptop i9</a></li>
+                                        <li><a href="">Laptop Ryzen 5</a></li>
+                                        <li><a href="">Laptop Ryzen 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Laptop HP</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">HP OmniBook</a></li>
+                                        <li><a href="">HP Omen</a></li>
+                                        <li><a href="">HP Victus</a></li>
+                                        <li><a href="">HP Pavilion</a></li>
+                                        <li><a href="">HP Probook</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- monitor -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 item w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-pc-display-horizontal"></i>
                                 <span>Màn hình</span>
                             </a>
+
+                            <!-- menu monitor dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between fm-menu-monitor">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Loại đồng hồ</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Đồng hồ thông minh</a></li>
+                                        <li><a href="">Vòng đeo tay thông minh</a></li>
+                                        <li><a href="">Đồng hồ định vị trẻ em</a></li>
+                                        <li><a href="">Dây đeo</a></li>
+                                        <li><a href="">Apple Watch</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Chọn theo thương hiệu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple Watch</a></li>
+                                        <li><a href="">Samsung</a></li>
+                                        <li><a href="">Xiaomi</a></li>
+                                        <li><a href="">Huawei HOT</a></li>
+                                        <li><a href="">Coros</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Camera</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Camera an ninh</a></li>
+                                        <li><a href="">Camera hành trình</a></li>
+                                        <li><a href="">Action Camera</a></li>
+                                        <li><a href="">Camera AI MỚI</a></li>
+                                        <li><a href="">Gimbal</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Sản phẩm nổi bật</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple Watch Series 11 HOT</a></li>
+                                        <li><a href="">Apple Watch SE 3 MỚI</a></li>
+                                        <li><a href="">Apple Watch Ultra 3 MỚI</a></li>
+                                        <li><a href="">Samsung Galaxy Watch 8</a></li>
+                                        <li><a href="">Huawei Watch GT 6 HOT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
+
                         <!-- sim -->
-                        <div class="col px-0">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 item w-100">
+                        <div class="col px-0 fm-categories">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-sim"></i>
                                 <span>Sim, thẻ cào</span>
                             </a>
+
+                            <!-- menu sim dropdown -->
+                            <div class="row menu-dropdown shadow justify-content-between fm-menu-sim">
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Thương hiệu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Apple (Macbook)</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">Asus</a></li>
+                                        <li><a href="">Dell</a></li>
+                                        <li><a href="">HP</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Nhu cầu</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop Gaming</a></li>
+                                        <li><a href="">Laptop AI</a></li>
+                                        <li><a href="">Laptop đồ họa</a></li>
+                                        <li><a href="">Laptop Sinh viên</a></li>
+                                        <li><a href="">Laptop Văn Phòng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Cấu hình</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">Laptop i5</a></li>
+                                        <li><a href="">Laptop i7</a></li>
+                                        <li><a href="">Laptop i9</a></li>
+                                        <li><a href="">Laptop Ryzen 5</a></li>
+                                        <li><a href="">Laptop Ryzen 7</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 px-4 py-3 text-start">
+                                    <h6>Laptop HP</h6>
+                                    <ul class="list-unstyled small">
+                                        <li><a href="">HP OmniBook</a></li>
+                                        <li><a href="">HP Omen</a></li>
+                                        <li><a href="">HP Victus</a></li>
+                                        <li><a href="">HP Pavilion</a></li>
+                                        <li><a href="">HP Probook</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -385,15 +811,13 @@
                     </div>
                 </div>
             </section>
-
-            social media
         </main>
 
         <!-- footer -->
         <footer class="border-top border-3 border-primary">
             <div class="container">
                 <div class="row my-4 justify-content-between">
-                    <div class="col-2">
+                    <div class="col-md-6 col-lg-2">
                         <h6>Hỗ trợ Khách hàng</h6>
                         <ul class="small list-unstyled">
                             <li><a>Thẻ ưu đãi</a></li>
@@ -403,7 +827,7 @@
                             <li><a>Dịch vụ sửa chữa</a></li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-3">
                         <h6>Chính sách mua hàng</h6>
                         <ul class="small list-unstyled">
                             <li><a>Điều kiện giao dịch chung</a></li>
@@ -416,7 +840,7 @@
                             <li><a>Chính sách bảo mật thanh toán</a></li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-6 col-lg-2">
                         <h6>Thông tin Phong Vũ</h6>
                         <ul class="small list-unstyled">
                             <li>
@@ -430,32 +854,38 @@
                             <li><a>Tuyển dụng</a></li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-6 col-lg-2">
                         <h6>Cộng đồng Phong Vũ</h6>
                         <ul class="small list-unstyled">
                             <li><a>Gọi mua hàng</a><a class="text-primary"> 18006867</a></li>
                             <li><a>Gọi chăm sóc</a><a class="text-primary"> 18006865</a></li>
-                            <li>
+                            <li class="d-inline d-lg-block me-2 me-lg-0">
                                 <a>
                                     <i class="bi bi-facebook text-primary"></i>
-                                    Facebook Phong Vũ
+                                    <span class="d-none d-lg-inline">Facebook Phong Vũ</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="d-inline d-lg-block me-2 me-lg-0">
                                 <a>
                                     <i class="bi bi-youtube text-danger"></i>
-                                    Phong Vũ Media (YouTube)
+                                    <span class="d-none d-lg-inline">Phong Vũ Media (YouTube)</span>
                                 </a>
                             </li>
-                            <li>
-                                <a> <i class="bi bi-microsoft-teams text-primary"></i> Phong Vũ Hội </a>
+                            <li class="d-inline d-lg-block me-2 me-lg-0">
+                                <a>
+                                    <i class="bi bi-microsoft-teams text-primary"></i>
+                                    <span class="d-none d-lg-inline">Phong Vũ Hội</span>
+                                </a>
                             </li>
-                            <li>
-                                <a> <img src="assets/img/Logo-zalo-png.png" alt="" style="width: 15px" /> OA Phong Vũ (Zalo)</a>
+                            <li class="d-inline d-lg-block me-2 me-lg-0">
+                                <a>
+                                    <img src="assets/img/Logo-zalo-png.png" alt="" style="width: 15px" />
+                                    <span class="d-none d-lg-inline">OA Phong Vũ (Zalo)</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-6 col-lg-2">
                         <h6>Email liên hệ</h6>
                         <ul class="small list-unstyled">
                             <li><a>Hỗ trợ Khách hàng:</a></li>
@@ -469,6 +899,16 @@
                 </div>
             </div>
         </footer>
+
+        <!-- social btns fixed -->
+        <div class="social-btns d-flex flex-column z-2">
+            <button class="border-0 fs-1 p-0" id="scrollTopBtn">
+                <i class="bi bi-arrow-up-circle-fill text-black scroll-top-btn"></i>
+            </button>
+            <i class="bi bi-telephone-fill fs-3 text-primary"></i>
+            <i class="bi bi-facebook fs-2 text-primary"></i>
+            <i class="bi bi-messenger fs-2 text-primary"></i>
+        </div>
 
         <!-- Bootstrap icon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
@@ -485,5 +925,8 @@
 
         <!-- index js -->
         <script src="JS/index.js"></script>
+
+        <!-- common js -->
+        <script src="JS/common.js"></script>
     </body>
 </html>

@@ -35,7 +35,7 @@ const flashSaleList = document.getElementById("showFlashSale");
 
 for (let i = 0; i < flashSales.length; i++) {
     flashSaleList.innerHTML += `
-    <div class="col-3 item my-3">
+    <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
             <a href="" class="link-item">
                 <div class="d-flex justify-content-center">
@@ -54,15 +54,7 @@ for (let i = 0; i < flashSales.length; i++) {
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
-                    <div class="btn-action d-flex justify-content-between">
-                        <button
-                            class="btn btn-outline-primary d-inline-block"
-                            style="width: 160px"
-                        >
-                            Thêm giỏ hàng
-                        </button>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                    </div>
+                    <button class="btn btn-outline-primary w-100 border-2">Thêm giỏ hàng</button>
                 </div>
             </a>
         </div>
@@ -76,7 +68,7 @@ const phones = document.getElementById("showPhone");
 
 for (let i = 0; i < phoneData.length; i++) {
     phones.innerHTML += `
-    <div class="col-3 item my-3">
+    <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
             <a href="" class="link-item">
                 <div class="d-flex justify-content-center">
@@ -95,15 +87,7 @@ for (let i = 0; i < phoneData.length; i++) {
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
-                    <div class="btn-action d-flex justify-content-between">
-                        <button
-                            class="btn btn-outline-primary d-inline-block"
-                            style="width: 160px"
-                        >
-                            Thêm giỏ hàng
-                        </button>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                    </div>
+                    <button class="btn btn-outline-primary w-100 border-2">Thêm giỏ hàng</button>
                 </div>
             </a>
         </div>
@@ -117,7 +101,7 @@ const laptops = document.querySelector("#showLaptop");
 
 laptopData.forEach((e) => {
     laptops.innerHTML += `
-    <div class="col-3 item my-3">
+    <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
             <a href="" class="link-item">
                 <div class="d-flex justify-content-center">
@@ -136,15 +120,7 @@ laptopData.forEach((e) => {
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
-                    <div class="btn-action d-flex justify-content-between">
-                        <button
-                            class="btn btn-outline-primary d-inline-block"
-                            style="width: 160px"
-                        >
-                            Thêm giỏ hàng
-                        </button>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                    </div>
+                    <button class="btn btn-outline-primary d-inline-block w-100 border-2">Thêm giỏ hàng</button>
                 </div>
             </a>
         </div>
@@ -158,7 +134,7 @@ const smartwatchs = document.getElementById("showSmartwatch");
 
 smartwatchData.forEach((e) => {
     smartwatchs.innerHTML += `
-    <div class="col-3 item my-3">
+    <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
             <a href="" class="link-item">
                 <div class="d-flex justify-content-center">
@@ -177,15 +153,7 @@ smartwatchData.forEach((e) => {
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
-                    <div class="btn-action d-flex justify-content-between">
-                        <button
-                            class="btn btn-outline-primary d-inline-block"
-                            style="width: 160px"
-                        >
-                            Thêm giỏ hàng
-                        </button>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                    </div>
+                    <button class="btn btn-outline-primary d-inline-block w-100 border-2">Thêm giỏ hàng</button>
                 </div>
             </a>
         </div>
@@ -199,7 +167,7 @@ const monitors = document.getElementById("showMonitor");
 
 monitorData.forEach((e) => {
     monitors.innerHTML += `
-    <div class="col-3 item my-3">
+    <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
             <a href="" class="link-item">
                 <div class="d-flex justify-content-center">
@@ -218,15 +186,7 @@ monitorData.forEach((e) => {
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
-                    <div class="btn-action d-flex justify-content-between">
-                        <button
-                            class="btn btn-outline-primary d-inline-block"
-                            style="width: 160px"
-                        >
-                            Thêm giỏ hàng
-                        </button>
-                        <a href="#" class="btn btn-primary">Mua ngay</a>
-                    </div>
+                    <button class="btn btn-outline-primary d-inline-block w-100 border-2">Thêm giỏ hàng</button>
                 </div>
             </a>
         </div>
