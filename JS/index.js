@@ -50,7 +50,7 @@ for (let i = 0; i < flashSales.length; i++) {
                     <p class="card-title fw-bold small line-clamp" style="height: 42px">
                         ${flashSales[i].name}
                     </p>
-                    <p class="card-text mb-0 fs-5 fw-bold text-primary">${flashSales[i].price.toLocaleString("vi-VN")}₫</p>
+                    <p class="card-text mb-0 fs-5 fw-bold text-danger">${flashSales[i].price.toLocaleString("vi-VN")}₫</p>
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
@@ -83,7 +83,7 @@ for (let i = 0; i < phoneData.length; i++) {
                     <p class="card-title fw-bold small line-clamp" style="height: 42px">
                         ${phoneData[i].name}
                     </p>
-                    <p class="card-text mb-0 fs-5 fw-bold text-primary"">${phoneData[i].price.toLocaleString("vi-VN")}₫</p>
+                    <p class="card-text mb-0 fs-5 fw-bold text-danger"">${phoneData[i].price.toLocaleString("vi-VN")}₫</p>
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
@@ -116,7 +116,7 @@ laptopData.forEach((e) => {
                     <p class="card-title fw-bold small line-clamp" style="height: 42px">
                         ${e.name}
                     </p>
-                    <p class="card-text mb-0 fs-5 fw-bold text-primary"">${e.price.toLocaleString("vi-VN")}₫</p>
+                    <p class="card-text mb-0 fs-5 fw-bold text-danger">${e.price.toLocaleString("vi-VN")}₫</p>
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
@@ -149,7 +149,7 @@ smartwatchData.forEach((e) => {
                     <p class="card-title fw-bold small line-clamp" style="height: 42px">
                         ${e.name}
                     </p>
-                    <p class="card-text mb-0 fs-5 fw-bold text-primary"">${e.price.toLocaleString("vi-VN")}₫</p>
+                    <p class="card-text mb-0 fs-5 fw-bold text-danger">${e.price.toLocaleString("vi-VN")}₫</p>
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>
@@ -182,7 +182,7 @@ monitorData.forEach((e) => {
                     <p class="card-title fw-bold small line-clamp" style="height: 42px">
                         ${e.name}
                     </p>
-                    <p class="card-text mb-0 fs-5 fw-bold text-primary"">${e.price.toLocaleString("vi-VN")}₫</p>
+                    <p class="card-text mb-0 fs-5 fw-bold text-danger">${e.price.toLocaleString("vi-VN")}₫</p>
                     <div class="text-decoration-line-through small text-secondary mb-3">
                         13.990.000₫
                     </div>

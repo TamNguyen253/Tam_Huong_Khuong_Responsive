@@ -21,7 +21,7 @@
         />
 
         <!-- style css -->
-        <link rel="stylesheet" href="assets/css/index.css" />
+        <link rel="stylesheet" href="assets/css/laptop.css" />
 
         <!-- responsive css -->
         <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -69,7 +69,7 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary px-0">
                 <div class="container">
                     <!-- logo -->
-                    <a class="navbar-brand pt-0" href="#">
+                    <a class="navbar-brand pt-0" href="index.html">
                         <img src="assets/img/logo-full.svg" alt="Bootstrap" class="logo-img" />
                     </a>
                     <button
@@ -251,7 +251,7 @@
 
                         <!-- Laptop -->
                         <div class="col px-0 fm-categories">
-                            <a href="laptop.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
                                     <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                                     <path
@@ -624,57 +624,126 @@
 
         <!-- main -->
         <main>
-            <!-- main banner -->
-            <section class="main-banner">
+            <!-- breadcrumb -->
+            <section class="breadcrumb-bar">
                 <div class="container">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="0"
-                                class="active"
-                                aria-current="true"
-                                aria-label="Slide 1"
-                            ></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/main-banner1.webp" class="d-block w-100" alt="main-banner1" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/main-banner2.webp" class="d-block w-100" alt="main-banner2" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/main-banner3.webp" class="d-block w-100" alt="main-banner3" />
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html"><i class="bi bi-house-door"></i> <span>Trang chủ</span> </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Laptop</li>
+                        </ol>
+                    </nav>
                 </div>
             </section>
 
-            <!-- flashsale -->
-            <section class="flashsale my-5">
+            <!-- banner laptop -->
+            <section class="banner-laptop">
+                <div class="container">
+                    <img src="assets/img/banner-laptop.jpg" class="img-fluid my-3" alt="" />
+                </div>
+            </section>
+
+            <!--  laptop branchs -->
+            <section class="laptop-branchs">
+                <div class="container">
+                    <h4 class="mb-3">Máy tính laptop</h4>
+                    <ul class="d-flex flex-wrap gap-1 my-2 list-unstyled">
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/acer.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/Asus.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/Dell.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/HP.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/Lenovo.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/LG.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/macbook.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/masstel-mobile-logo022.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/MSI-1.webp" alt="" /></a>
+                        </li>
+                        <li class="btn border border-2 border-light-subtle">
+                            <a href=""><img src="assets/img/laptops/laptopBranch/MSI.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--  choose to demand -->
+            <section class="demand mt-4">
+                <div class="container">
+                    <h4 class="mb-3">Chọn theo nhu cầu</h4>
+                    <ul class="d-flex list-unstyled flex-wrap row-gap-2 row-gap-lg-0">
+                        <li>
+                            <a href="" class="bg bg-light me-2 border p-2 rounded text-center text-black">
+                                <img src="assets/img/laptops/latopDemand/demand1.webp" alt="" />
+                                <p class="small">Văn phòng</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bg bg-light me-2 border p-2 rounded text-center text-black">
+                                <img src="assets/img/laptops/latopDemand/demand2.webp" alt="" />
+                                <p class="small">Gaming</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bg bg-light me-2 border p-2 rounded text-center text-black">
+                                <img src="assets/img/laptops/latopDemand/demand3.webp" alt="" />
+                                <p class="small">Mỏng nhẹ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bg bg-light me-2 border p-2 rounded text-center text-black">
+                                <img src="assets/img/laptops/latopDemand/demand4.webp" alt="" />
+                                <p class="small">Đồ họa kỹ thuật</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bg bg-light me-2 border p-2 rounded text-center text-black">
+                                <img src="assets/img/laptops/latopDemand/demand5.webp" alt="" />
+                                <p class="small">Sinh viên</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bg bg-light me-2 border p-2 rounded text-center text-black">
+                                <img src="assets/img/laptops/latopDemand/demand6.webp" alt="" />
+                                <p class="small">Cảm ứng</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bg bg-light me-2 border p-2 rounded text-center text-black">
+                                <img src="assets/img/laptops/latopDemand/demand7.webp" alt="" />
+                                <p class="small">Laptop AI</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- outstanding products -->
+            <section class="outst-products my-5">
                 <div class="container">
                     <div class="list-group">
                         <!-- title -->
                         <div class="list-group-item active d-flex justify-content-between align-items-center">
                             <h4 class="title-left">
-                                <i class="bi bi-lightning-charge-fill text-warning"></i>
-                                <span class="text-white fw-bold">Flash Sale</span>
-                                <i class="bi bi-lightning-charge-fill text-warning me-1"></i>
-                                <span class="">Kết thúc trong</span>
-                                <span class="fw-bold text-white bg bg-black px-3 p-1 mt-2 d-inline-block rounded-pill" id="countDown">01:00:00</span>
+                                <i class="bi bi-fire"></i>
+                                <span class="text-white fw-bold">Sản phẩm nổi bật</span>
                             </h4>
                             <div class="title-right">
                                 <a class="icon-link icon-link-hover text-white" href="#">
@@ -688,129 +757,342 @@
                             </div>
                         </div>
 
-                        <!-- show flashsale  -->
+                        <!-- show outstanding products  -->
                         <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showFlashSale"></div>
+                            <div class="row justify-content-center pb-2" id="showOutPro"></div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- phones -->
-            <section class="phones my-5">
+            <!-- Select by criteria -->
+            <section class="criteria">
                 <div class="container">
-                    <div class="list-group">
-                        <!-- phones title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Điện thoại</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
+                    <h4 class="mb-3">Chọn theo tiêu chí</h4>
+                    <ul class="list-unstyled d-flex flex-wrap gap-2">
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn btn-outline-primary border-2 dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Bộ lọc
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </div>
-                        </div>
-
-                        <!-- show phones -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showPhone"></div>
-                        </div>
-                    </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Xem theo giá
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Ổ cứng
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Dung lượng RAM
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    CPU
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Kích thước màn hình
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Độ phân giải
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Card đồ họa
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Tính năng đặc biệt
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Công nghệ AI
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button
+                                    class="btn bg bg-secondary-subtle dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Hãng sản xuất
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- laptops -->
-            <section class="laptops my-5">
+            <!-- Sort by -->
+            <section class="sort mt-4">
                 <div class="container">
-                    <div class="list-group">
-                        <!-- laptops title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Laptop</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show laptops -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showLaptop"></div>
-                        </div>
-                    </div>
+                    <h4 class="mb-3">Sắp xếp theo</h4>
+                    <ul class="list-unstyled d-flex flex-wrap gap-2">
+                        <li class="ms-auto">
+                            <button class="btn btn-outline-primary border-2">
+                                <i class="bi bi-sort-up-alt"></i>
+                                <span>Giá Thấp - Cao</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn bg-secondary-subtle border-2">
+                                <i class="bi bi-sort-down"></i>
+                                <span>Giá Cao - Thấp</span>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- smartwatchs -->
-            <section class="smartwatchs my-5">
+            <!-- show laptop page -->
+            <section class="laptops mt-3 mb-4">
                 <div class="container">
-                    <div class="list-group">
-                        <!-- smartwatchs title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Smartwatch</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show smartwatchs -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showSmartwatch"></div>
-                        </div>
+                    <!-- show laptops  -->
+                    <div class="row justify-content-center pb-2" id="showLapPage"></div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-primary border-2">Xem thêm 100 sản phẩm</button>
                     </div>
                 </div>
             </section>
 
-            <!-- monitors -->
-            <section class="monitors my-5">
+            <!-- Q&A -->
+            <div class="QA mb-5">
                 <div class="container">
-                    <div class="list-group">
-                        <!-- monitors title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Màn hình</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show monitors -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showMonitor"></div>
-                        </div>
-                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item bg bg-secondary-subtle" aria-current="true"><h5 class="fw-bold">Câu hỏi thường gặp</h5></li>
+                        <!-- item1 -->
+                        <li class="list-group-item">
+                            <details class="card">
+                                <summary class="card-header fw-bold small">
+                                    Laptop có card đồ họa rời khác gì so với laptop có card đồ họa tích hợp?
+                                </summary>
+                                <div class="card-body small">
+                                    <p>
+                                        Laptop có card đồ họa rời (GPU rời) thường mạnh hơn và phù hợp cho các tác vụ như chơi game, chỉnh sửa video
+                                        hoặc thiết kế đồ họa. Trong khi đó, laptop với card đồ họa tích hợp (GPU tích hợp) sử dụng tài nguyên của CPU
+                                        và RAM, phù hợp cho các tác vụ văn phòng hoặc học tập cơ bản. Nếu bạn thường xuyên làm việc với phần mềm như
+                                        Adobe Premiere, AutoCAD hoặc chơi game nặng, hãy chọn laptop có card đồ họa rời như NVIDIA GeForce hoặc AMD
+                                        Radeon để đảm bảo hiệu suất tốt hơn.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <!-- item2 -->
+                        <li class="list-group-item">
+                            <details class="card">
+                                <summary class="card-header fw-bold small">
+                                    Làm thế nào để biết một laptop có phù hợp với thiết kế đồ họa không?
+                                </summary>
+                                <div class="card-body small">
+                                    <p>
+                                        Laptop cho thiết kế đồ họa cần có card đồ họa chuyên dụng (GPU), CPU mạnh mẽ, RAM tối thiểu 16GB và màn hình
+                                        có độ phân giải cao, độ phủ màu chuẩn. Hãy kiểm tra thông số kỹ thuật chi tiết trước khi mua. Từ khóa bổ trợ:
+                                        laptop đồ họa, GPU, RAM, màn hình độ phân giải cao.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <!-- item3 -->
+                        <li class="list-group-item">
+                            <details class="card">
+                                <summary class="card-header fw-bold small">Laptop màn hình OLED và IPS khác nhau như thế nào?</summary>
+                                <div class="card-body small">
+                                    <p>
+                                        Màn hình OLED cho độ tương phản cao, màu đen sâu và hình ảnh sắc nét hơn. Màn hình IPS có góc nhìn rộng, màu
+                                        sắc trung thực, thích hợp cho công việc đồ họa. Tùy vào nhu cầu, bạn có thể chọn loại màn hình phù hợp. Từ
+                                        khóa bổ trợ: màn hình OLED laptop, màn hình IPS, độ phân giải laptop.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <!-- item4 -->
+                        <li class="list-group-item">
+                            <details class="card">
+                                <summary class="card-header fw-bold small">Làm thế nào để chọn laptop phù hợp cho lập trình viên?</summary>
+                                <div class="card-body small">
+                                    <p>
+                                        Laptop cho lập trình viên cần CPU mạnh (tối thiểu Intel Core i5 hoặc AMD Ryzen 5), RAM từ 8GB trở lên, màn
+                                        hình Full HD và ổ SSD để tăng tốc độ xử lý. Nếu lập trình đồ họa, cần thêm card đồ họa. Từ khóa bổ trợ: laptop
+                                        lập trình, CPU, SSD.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <!-- item5 -->
+                        <li class="list-group-item">
+                            <details class="card">
+                                <summary class="card-header fw-bold small">Màn hình 2K và 4K trên laptop có thực sự cần thiết?</summary>
+                                <div class="card-body small">
+                                    <p>
+                                        Màn hình 2K hoặc 4K trên laptop phù hợp nếu bạn là nhà thiết kế đồ họa, chỉnh sửa video, hoặc làm việc liên
+                                        quan đến hình ảnh, nơi cần độ sắc nét và màu sắc chính xác. Với các tác vụ văn phòng hoặc học tập cơ bản, màn
+                                        hình Full HD (1920x1080) đã đủ đáp ứng. Tuy nhiên, lưu ý rằng laptop màn hình 4K thường tiêu tốn pin nhanh hơn
+                                        so với màn hình Full HD.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                        <!-- item6 -->
+                        <li class="list-group-item">
+                            <details class="card">
+                                <summary class="card-header fw-bold small">Điều kiện và chính sách bảo hành laptop tại Phong Vũ?</summary>
+                                <div class="card-body small">
+                                    <p>
+                                        Phong Vũ chấp nhận bảo hành sản phẩm với những điều kiện sau: <br />
+                                        - Sản phẩm còn thời hạn bảo hành, căn cứ vào hóa đơn bán hàng. <br />
+                                        - Sản phẩm bị lỗi kỹ thuật nằm trong diện được Nhà sản xuất/Nhà phân phối chấp nhận bảo hành. Nếu Nhà sản
+                                        xuất/Nhà <br />
+                                        - phân phối kiểm tra và xác nhận sản phẩm không đủ điều kiện thì sẽ bị từ chối bảo hành.<br />
+                                        - Số Serial/Service Tag/Imei trên sản phẩm còn rõ nét, nguyên vẹn và trùng hợp với phiếu bảo hành (Nếu có).
+                                        Sản phẩm mua trước 15/10/2022 phải có tem bảo hành nguyên vẹn. Theo đó, Phong Vũ sẽ tiến hành bảo hành sản
+                                        phẩm theo quy định của Nhà sản xuất. Riêng trường hợp Nhà sản xuất hay đơn vị ủy quyền từ chối bảo hành thì sẽ
+                                        không thuộc trách nhiệm của Phong Vũ. Bên cạnh đó, những sự cố thiệt hại khi dữ liệu sản phẩm bị mất, bị tiết
+                                        lộ, hư hỏng không thuộc phạm vi giải quyết của Nhà sản xuất và Nhà phân phối.
+                                    </p>
+                                </div>
+                            </details>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!-- footer -->
@@ -923,8 +1205,8 @@
         <!-- products js -->
         <script src="JS/data.js"></script>
 
-        <!-- index js -->
-        <script src="JS/index.js"></script>
+        <!-- laptop js -->
+        <script src="JS/laptop.js"></script>
 
         <!-- common js -->
         <script src="JS/common.js"></script>

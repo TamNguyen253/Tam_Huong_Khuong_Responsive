@@ -4,6 +4,11 @@
     .login-cart {
         border-bottom: 0;
     }
+
+    /* breadcrum */
+    .breadcrumb-bar {
+        margin-top: 180px;
+    }
 }
 
 /* Tablet & mobi */
@@ -15,6 +20,16 @@
 
     .login-cart {
         border-bottom: 1px solid rgba(0, 0, 0, 0.43);
+    }
+
+    /* breadcrum */
+    .breadcrumb-bar {
+        margin-top: 110px;
+    }
+
+    /* laptop page */
+    .banner-laptop {
+        margin-top: -20px;
     }
 }
 
