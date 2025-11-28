@@ -247,6 +247,29 @@ input:focus {
 }
 
 /* ==================================== main ====================================== */
+.cart-page {
+    margin-top: 180px !important;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.btn-remove {
+    color: red;
+    cursor: pointer;
+}
+.btn-remove:hover {
+    text-decoration: underline;
+}
+.product-card img {
+    height: 150px;
+    object-fit: contain;
+}
 
 /* ==================================== footer ====================================== */
 footer a:hover {

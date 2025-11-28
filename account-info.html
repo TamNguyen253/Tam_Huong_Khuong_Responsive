@@ -21,7 +21,7 @@
         />
 
         <!-- style css -->
-        <link rel="stylesheet" href="assets/css/index.css" />
+        <link rel="stylesheet" href="assets/css/account-info.css" />
 
         <!-- responsive css -->
         <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -99,7 +99,7 @@
                         </form>
 
                         <!-- login & cart -->
-                        <ul class="login-cart navbar-nav ms-auto mb-lg-0 flex-row align-items-center">
+                        <ul class="login-cart navbar-nav ms-auto mb-lg-0 flex-row">
                             <li class="nav-item">
                                 <a aria-current="page" href="login.html" id="link-login">
                                     <div class="nav-link active ms-2 ps-lg-0 login-hover d-inline-block">
@@ -123,83 +123,23 @@
                                                     <i class="bi bi-person"></i> Thông tin tài khoản
                                                 </a>
 
-                                                <a href="account-info.html" class="list-group-item border-0 user-item">
+                                                <a href="#" class="list-group-item border-0 user-item">
                                                     <i class="bi bi-card-checklist"></i> Lịch sử mua hàng
                                                 </a>
 
-                                                <a href="account-info.html" class="list-group-item border-0 user-item">
-                                                    <i class="bi bi-heart"></i> Hỗ trợ
-                                                </a>
+                                                <a href="#" class="list-group-item border-0 user-item"> <i class="bi bi-heart"></i> Hỗ trợ </a>
                                             </div>
+
                                             <!-- Login Logout -->
                                             <a href="login.html" class="btn btn-primary w-100 mt-2">Đăng nhập</a>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-
-                            <!-- cart -->
-                            <li class="">
-                                <a class="" aria-current="page" href="#">
-                                    <div class="nav-item ms-3 d-inline-block cart-hover">
-                                        <i class="bi bi-bag text-black"></i>
-                                        <span class="text-black">Giỏ hàng</span>
-
-                                        <div class="cart-box">
-                                            <!-- vùng scroll -->
-                                            <div class="product-scroll">
-                                                <!-- sản phẩm 1 -->
-                                                <div class="mb-2">
-                                                    <div class="d-flex">
-                                                        <div class="product-img-wrap">
-                                                            <img src="assets/img/laptops/laptop6.webp" alt="Laptop" class="cart-product-img" />
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <div class="fw-semibold small">
-                                                                Máy tính xách tay/ Laptop HP 14-ep1011TU - 9Z2W3PA (Core 5-120U) (Bạc)
-                                                            </div>
-                                                            <div class="small text-muted">
-                                                                Bạc<br />
-                                                                Số lượng 1
-                                                            </div>
-                                                            <div class="fw-bold text-danger">15.890.000đ</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- sản phẩm 2 -->
-                                                <div class="mb-2">
-                                                    <div class="d-flex">
-                                                        <!-- khung hình -->
-                                                        <div class="product-img-wrap">
-                                                            <img src="assets/img/laptops/laptop7.webp" alt="Laptop" class="cart-product-img" />
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <div class="fw-semibold small">
-                                                                Máy tính xách tay/ Laptop HP 14-ep1011TU - 9Z2W3PA (Core 5-120U) (Bạc)
-                                                            </div>
-                                                            <div class="small text-muted">
-                                                                Đen<br />
-                                                                Số lượng 1
-                                                            </div>
-                                                            <div class="fw-bold text-danger">20.890.000đ</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- tổng tiền -->
-                                            <div class="cart-total d-flex justify-content-between align-items-center mb-2">
-                                                <span class="small">Tổng tiền (2) sản phẩm</span>
-                                                <span class="fw-bold text-danger">36.780.000đ</span>
-                                            </div>
-
-                                            <!-- nút xem giỏ hàng -->
-                                            <a href="cart.html" class="btn btn-primary w-100">Xem giỏ hàng</a>
-                                        </div>
-                                    </div>
+                            <li class="nav-item ms-3">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                    <i class="bi bi-bag"></i>
+                                    <span>Giỏ hàng</span>
                                 </a>
                             </li>
                         </ul>
@@ -714,193 +654,404 @@
 
         <!-- main -->
         <main>
-            <!-- main banner -->
-            <section class="main-banner">
+            <div class="account-info">
                 <div class="container">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
+                    <div class="d-flex align-items-start">
+                        <div
+                            class="nav flex-column nav-pills me-3 border border-2 border-secondary-subtle p-3 rounded-4 gap-3 w-25"
+                            id="v-pills-tab"
+                            role="tablist"
+                            aria-orientation="vertical"
+                        >
                             <button
+                                class="nav-link text-black active"
+                                id="v-pills-home-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#tttk"
                                 type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="0"
-                                class="active"
-                                aria-current="true"
-                                aria-label="Slide 1"
-                            ></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                role="tab"
+                                aria-controls="v-pills-home"
+                                aria-selected="true"
+                            >
+                                Thông tin tài khoản
+                            </button>
+                            <button
+                                class="nav-link text-black"
+                                id="v-pills-profile-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#lsmh"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-profile"
+                                aria-selected="false"
+                            >
+                                Lịch sử mua hàng
+                            </button>
+                            <button
+                                class="nav-link text-black"
+                                id="v-pills-profile-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#gopy"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-profile"
+                                aria-selected="false"
+                            >
+                                Hỗ trợ
+                            </button>
+                            <button class="btn btn-outline-primary" id="v-pills-profile-tab">Đăng xuất</button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/main-banner1.webp" class="d-block w-100" alt="main-banner1" />
+                        <div class="tab-content w-100" id="v-pills-tabContent">
+                            <!-- Thông tin tài khoản -->
+                            <div class="tab-pane fade show active" id="tttk" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                <p class="fw-bold fs-5">Thông tin tài khoản</p>
+                                <p class="fw-bold">Họ tên</p>
+                                <input type="text" placeholder="Nhập họ tên" class="w-100 rounded-3 mb-3" />
+                                <p class="fw-bold">Email</p>
+                                <input type="text" placeholder="Nhập họ tên" class="w-100 rounded-3 mb-3" />
+                                <p class="fw-bold">Sđt</p>
+                                <input type="text" placeholder="Nhập họ tên" class="w-100 rounded-3 mb-3" />
+                                <p class="fw-bold">Ngày sinh</p>
+                                <input type="text" placeholder="Nhập họ tên" class="w-100 rounded-3 mb-3" />
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/main-banner2.webp" class="d-block w-100" alt="main-banner2" />
+
+                            <!-- lịch sử mua hàng -->
+                            <div class="tab-pane fade" id="lsmh" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <p class="fw-bold fs-5">Lịch sử mua hàng</p>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link active text-black"
+                                            id="home-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="home-tab-pane"
+                                            aria-selected="true"
+                                        >
+                                            Tất cả
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link text-black"
+                                            id="profile-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="profile-tab-pane"
+                                            aria-selected="false"
+                                        >
+                                            Chờ xác nhận
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link text-black"
+                                            id="profile-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#xacnhan"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="profile-tab-pane"
+                                            aria-selected="false"
+                                        >
+                                            Xác nhận
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link text-black"
+                                            id="profile-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#dangvanch"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="profile-tab-pane"
+                                            aria-selected="false"
+                                        >
+                                            Đang vận chuyển
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link text-black"
+                                            id="profile-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#dagiaohang"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="profile-tab-pane"
+                                            aria-selected="false"
+                                        >
+                                            Đã giao hàng
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link text-black"
+                                            id="profile-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#dahuy"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="profile-tab-pane"
+                                            aria-selected="false"
+                                        >
+                                            Đã hủy
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <!-- Tất cả -->
+                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                        <!-- item -->
+                                        <div class="order-card">
+                                            <div class="d-flex justify-content-between align-items-center order-header">
+                                                <div>
+                                                    Đơn hàng: <span>#WNO302581470</span>
+                                                    <span class="mx-2">•</span>
+                                                    Ngày đặt hàng: <span>03/02/2025</span>
+                                                </div>
+                                                <span class="status-badge status-success">Đã nhận hàng</span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img src="assets/img/laptops/laptop3.webp" alt="SP" class="order-product-img" />
+                                                <div class="flex-grow-1">
+                                                    <div class="order-title">
+                                                        SẠC TRUSMI CỔNG 1A1C PD 20W KÈM CÁP TYPE-C TO TYPE-C 60W (US) CH11 ĐEN
+                                                    </div>
+                                                    <div>330.000đ</div>
+                                                    <span class="badge bg-light text-info border mt-1">Đã xuất VAT</span>
+                                                </div>
+
+                                                <div class="text-end ms-3">
+                                                    <div class="order-total-label">Tổng thanh toán:</div>
+                                                    <div class="order-price">165.000đ</div>
+                                                    <a href="#" class="order-link"> Xem chi tiết <i class="bi bi-chevron-right"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- item -->
+                                        <div class="order-card">
+                                            <div class="d-flex justify-content-between align-items-center order-header">
+                                                <div>
+                                                    Đơn hàng: <span>#WNO302581470</span>
+                                                    <span class="mx-2">•</span>
+                                                    Ngày đặt hàng: <span>03/02/2025</span>
+                                                </div>
+                                                <span class="status-badge status-success">Đã nhận hàng</span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img src="assets/img/laptops/laptop3.webp" alt="SP" class="order-product-img" />
+                                                <div class="flex-grow-1">
+                                                    <div class="order-title">
+                                                        SẠC TRUSMI CỔNG 1A1C PD 20W KÈM CÁP TYPE-C TO TYPE-C 60W (US) CH11 ĐEN
+                                                    </div>
+                                                    <div>330.000đ</div>
+                                                    <span class="badge bg-light text-info border mt-1">Đã xuất VAT</span>
+                                                </div>
+
+                                                <div class="text-end ms-3">
+                                                    <div class="order-total-label">Tổng thanh toán:</div>
+                                                    <div class="order-price">165.000đ</div>
+                                                    <a href="#" class="order-link"> Xem chi tiết <i class="bi bi-chevron-right"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Chờ xác nhận -->
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                        <!-- item -->
+                                        <div class="order-card">
+                                            <div class="d-flex justify-content-between align-items-center order-header">
+                                                <div>
+                                                    Đơn hàng: <span>#WNO302581470</span>
+                                                    <span class="mx-2">•</span>
+                                                    Ngày đặt hàng: <span>03/02/2025</span>
+                                                </div>
+                                                <span class="status-badge status-success">Đã nhận hàng</span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img src="assets/img/laptops/laptop4.webp" alt="SP" class="order-product-img" />
+                                                <div class="flex-grow-1">
+                                                    <div class="order-title">
+                                                        SẠC TRUSMI CỔNG 1A1C PD 20W KÈM CÁP TYPE-C TO TYPE-C 60W (US) CH11 ĐEN
+                                                    </div>
+                                                    <div>330.000đ</div>
+                                                    <span class="badge bg-light text-info border mt-1">Đã xuất VAT</span>
+                                                </div>
+
+                                                <div class="text-end ms-3">
+                                                    <div class="order-total-label">Tổng thanh toán:</div>
+                                                    <div class="order-price">165.000đ</div>
+                                                    <a href="#" class="order-link"> Xem chi tiết <i class="bi bi-chevron-right"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Xác nhận -->
+                                    <div class="tab-pane fade" id="xacnhan" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                        <!-- item -->
+                                        <div class="order-card">
+                                            <div class="d-flex justify-content-between align-items-center order-header">
+                                                <div>
+                                                    Đơn hàng: <span>#WNO302581470</span>
+                                                    <span class="mx-2">•</span>
+                                                    Ngày đặt hàng: <span>03/02/2025</span>
+                                                </div>
+                                                <span class="status-badge status-success">Đã nhận hàng</span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img src="assets/img/laptops/laptop5.webp" alt="SP" class="order-product-img" />
+                                                <div class="flex-grow-1">
+                                                    <div class="order-title">
+                                                        SẠC TRUSMI CỔNG 1A1C PD 20W KÈM CÁP TYPE-C TO TYPE-C 60W (US) CH11 ĐEN
+                                                    </div>
+                                                    <div>330.000đ</div>
+                                                    <span class="badge bg-light text-info border mt-1">Đã xuất VAT</span>
+                                                </div>
+
+                                                <div class="text-end ms-3">
+                                                    <div class="order-total-label">Tổng thanh toán:</div>
+                                                    <div class="order-price">165.000đ</div>
+                                                    <a href="#" class="order-link"> Xem chi tiết <i class="bi bi-chevron-right"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Đang vận chuyển -->
+                                    <div class="tab-pane fade" id="dangvanch" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                        <!-- item -->
+                                        <div class="order-card">
+                                            <div class="d-flex justify-content-between align-items-center order-header">
+                                                <div>
+                                                    Đơn hàng: <span>#WNO302581470</span>
+                                                    <span class="mx-2">•</span>
+                                                    Ngày đặt hàng: <span>03/02/2025</span>
+                                                </div>
+                                                <span class="status-badge status-success">Đã nhận hàng</span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img src="assets/img/laptops/laptop6.webp" alt="SP" class="order-product-img" />
+                                                <div class="flex-grow-1">
+                                                    <div class="order-title">
+                                                        SẠC TRUSMI CỔNG 1A1C PD 20W KÈM CÁP TYPE-C TO TYPE-C 60W (US) CH11 ĐEN
+                                                    </div>
+                                                    <div>330.000đ</div>
+                                                    <span class="badge bg-light text-info border mt-1">Đã xuất VAT</span>
+                                                </div>
+
+                                                <div class="text-end ms-3">
+                                                    <div class="order-total-label">Tổng thanh toán:</div>
+                                                    <div class="order-price">165.000đ</div>
+                                                    <a href="#" class="order-link"> Xem chi tiết <i class="bi bi-chevron-right"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Đã giao hàng -->
+                                    <div class="tab-pane fade" id="dagiaohang" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                        <!-- item -->
+                                        <div class="order-card">
+                                            <div class="d-flex justify-content-between align-items-center order-header">
+                                                <div>
+                                                    Đơn hàng: <span>#WNO302581470</span>
+                                                    <span class="mx-2">•</span>
+                                                    Ngày đặt hàng: <span>03/02/2025</span>
+                                                </div>
+                                                <span class="status-badge status-success">Đã nhận hàng</span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img src="assets/img/laptops/laptop7.webp" alt="SP" class="order-product-img" />
+                                                <div class="flex-grow-1">
+                                                    <div class="order-title">
+                                                        SẠC TRUSMI CỔNG 1A1C PD 20W KÈM CÁP TYPE-C TO TYPE-C 60W (US) CH11 ĐEN
+                                                    </div>
+                                                    <div>330.000đ</div>
+                                                    <span class="badge bg-light text-info border mt-1">Đã xuất VAT</span>
+                                                </div>
+
+                                                <div class="text-end ms-3">
+                                                    <div class="order-total-label">Tổng thanh toán:</div>
+                                                    <div class="order-price">165.000đ</div>
+                                                    <a href="#" class="order-link"> Xem chi tiết <i class="bi bi-chevron-right"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Đã hủy -->
+                                    <div class="tab-pane fade" id="dahuy" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                        <!-- item -->
+                                        <div class="order-card">
+                                            <div class="d-flex justify-content-between align-items-center order-header">
+                                                <div>
+                                                    Đơn hàng: <span>#WNO302581470</span>
+                                                    <span class="mx-2">•</span>
+                                                    Ngày đặt hàng: <span>03/02/2025</span>
+                                                </div>
+                                                <span class="status-badge status-success">Đã nhận hàng</span>
+                                            </div>
+
+                                            <div class="d-flex">
+                                                <img src="assets/img/laptops/laptop8.webp" alt="SP" class="order-product-img" />
+                                                <div class="flex-grow-1">
+                                                    <div class="order-title">
+                                                        SẠC TRUSMI CỔNG 1A1C PD 20W KÈM CÁP TYPE-C TO TYPE-C 60W (US) CH11 ĐEN
+                                                    </div>
+                                                    <div>330.000đ</div>
+                                                    <span class="badge bg-light text-info border mt-1">Đã xuất VAT</span>
+                                                </div>
+
+                                                <div class="text-end ms-3">
+                                                    <div class="order-total-label">Tổng thanh toán:</div>
+                                                    <div class="order-price">165.000đ</div>
+                                                    <a href="#" class="order-link"> Xem chi tiết <i class="bi bi-chevron-right"></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/main-banner3.webp" class="d-block w-100" alt="main-banner3" />
+                            <!-- góp ý -->
+                            <div class="tab-pane fade" id="gopy" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                                <p class="fw-bold fs-5">Hỗ trợ</p>
+                                <div class="row gap-1 ms-1">
+                                    <div class="col-5 d-flex gap-3 align-items-center bg bg-body-secondary p-3 rounded-4 me-2">
+                                        <i class="bi bi-headphones fs-4 text-white bg bg-primary px-2 rounded-2"></i>
+                                        <div>
+                                            <p class="fw-bold mb-0">Tư vấn mua hàng - Bảo hành (7h30 - 22h00)</p>
+                                            <p class="fw-light small mb-0">1800.2097</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex gap-3 align-items-center bg bg-body-secondary p-3 rounded-4">
+                                        <i class="bi bi-headphones fs-4 text-white bg bg-primary px-2 rounded-2"></i>
+                                        <div>
+                                            <p class="fw-bold mb-0">Khiếu nại (8h00 - 21h30)</p>
+                                            <p class="fw-light small mb-0">1800.2063</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 d-flex gap-3 align-items-center bg bg-body-secondary p-3 rounded-4 mt-2">
+                                        <i class="bi bi-headphones fs-4 text-white bg bg-primary px-2 rounded-2"></i>
+                                        <div>
+                                            <p class="fw-bold mb-0">Email</p>
+                                            <p class="fw-light small mb-0">cskh@cellphones.com.vn</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </section>
-
-            <!-- flashsale -->
-            <section class="flashsale my-5">
-                <div class="container">
-                    <div class="list-group">
-                        <!-- title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <i class="bi bi-lightning-charge-fill text-warning"></i>
-                                <span class="text-white fw-bold">Flash Sale</span>
-                                <i class="bi bi-lightning-charge-fill text-warning me-1"></i>
-                                <span class="">Kết thúc trong</span>
-                                <span class="fw-bold text-white bg bg-black px-3 p-1 mt-2 d-inline-block rounded-pill" id="countDown">01:00:00</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show flashsale  -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showFlashSale"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- phones -->
-            <section class="phones my-5">
-                <div class="container">
-                    <div class="list-group">
-                        <!-- phones title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Điện thoại</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show phones -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showPhone"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- laptops -->
-            <section class="laptops my-5">
-                <div class="container">
-                    <div class="list-group">
-                        <!-- laptops title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Laptop</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show laptops -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showLaptop"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- smartwatchs -->
-            <section class="smartwatchs my-5">
-                <div class="container">
-                    <div class="list-group">
-                        <!-- smartwatchs title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Smartwatch</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show smartwatchs -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showSmartwatch"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- monitors -->
-            <section class="monitors my-5">
-                <div class="container">
-                    <div class="list-group">
-                        <!-- monitors title -->
-                        <div class="list-group-item active d-flex justify-content-between align-items-center">
-                            <h4 class="title-left">
-                                <span class="text-white fw-bold">Màn hình</span>
-                            </h4>
-                            <div class="title-right">
-                                <a class="icon-link icon-link-hover text-white" href="#">
-                                    Xem tất cả
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- show monitors -->
-                        <div class="list-group-item active border-top">
-                            <div class="row justify-content-center pb-2" id="showMonitor"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </main>
 
         <!-- footer -->
@@ -1012,9 +1163,6 @@
 
         <!-- products js -->
         <script src="JS/data.js"></script>
-
-        <!-- index js -->
-        <script src="JS/index.js"></script>
 
         <!-- common js -->
         <script src="JS/common.js"></script>

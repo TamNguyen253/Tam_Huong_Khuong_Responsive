@@ -13,7 +13,7 @@
 
 /* Tablet & mobi */
 @media (max-width: 991.98px) {
-    /* header */
+    /* ================== header ================== */
     .main-banner {
         margin-top: 120px;
     }
@@ -22,12 +22,22 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.43);
     }
 
+    /* user box dropdown */
+    #user-box {
+        left: 0;
+    }
+
+    /* cart box dropdown */
+    .cart-box {
+        right: 0;
+    }
+
     /* breadcrum */
     .breadcrumb-bar {
         margin-top: 110px;
     }
 
-    /* laptop page */
+    /* ================== laptop page ================== */
     .banner-laptop {
         margin-top: -20px;
     }

@@ -70,77 +70,8 @@ input:focus {
     display: block;
 }
 
-/* ======================== cart ======================== */
-.cart-hover {
-    position: relative;
-}
-
-.cart-hover:hover .cart-box {
-    display: block;
-}
-
-.cart-box {
-    position: absolute;
-    right: 0;
-    z-index: 3;
-    width: 340px;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    display: none;
-}
-
-/* khung scroll sản phẩm */
-.product-scroll {
-    max-height: 250px;
-    overflow-y: auto;
-    padding-right: 5px;
-}
-
-/* chỉ khung cho hình */
-.product-img-wrap {
-    width: 200px;
-    height: 90px;
-    border: 1px solid #e3e3e3;
-    border-radius: 6px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    background-color: #fff; /* tránh lộ nền */
-}
-
-.cart-product-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ảnh không méo, crop chuẩn */
-    border-radius: 4px;
-}
-
-/* Khuyến mãi thụt lề */
-.promo-list {
-    padding-left: 28px;
-    margin-top: 4px;
-    margin-bottom: 10px;
-}
-
-.promo-item {
-    font-size: 13px;
-}
-
-.promo-item i {
-    margin-right: 6px;
-}
-
-.cart-total {
-    border-top: 1px solid #e5e5e5;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-
 /* ======================== categories ======================== */
+
 .dropdown-toggle:hover .dropdown-menu {
     display: block;
 }
@@ -247,6 +178,154 @@ input:focus {
 }
 
 /* ==================================== main ====================================== */
+/* ================đơn hàng================ */
+.sidebar {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #444;
+}
+
+/* active: dùng màu primary + thanh bên trái */
+.sidebar-item.active {
+    background: #eef5ff; /* nền nhạt theo primary */
+    border-left: 3px solid var(--bs-primary);
+    color: var(--bs-primary);
+    font-weight: 500;
+}
+
+.sidebar-item i {
+    font-size: 18px;
+}
+
+.history-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 20px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Tabs */
+.order-tabs .nav-link {
+    border-radius: 0;
+    color: #555;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+.order-tabs .nav-link.active {
+    color: var(--bs-primary);
+    border-bottom: 2px solid var(--bs-primary);
+    background: transparent;
+}
+
+.date-filter {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.date-filter input {
+    border: none;
+    font-size: 13px;
+    width: 115px;
+}
+
+.date-filter input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.order-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+}
+
+.order-header {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.order-header span {
+    font-weight: 500;
+}
+
+.status-badge {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-success {
+    background: #e6f5ea;
+    color: #1b8b4b;
+}
+
+.status-cancel {
+    background: #ffe9e5;
+    color: #c62828;
+}
+
+.order-product-img {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.order-title {
+    font-weight: 600;
+}
+
+.order-price {
+    color: #c62828;
+    font-weight: 600;
+}
+
+.order-total-label {
+    font-size: 13px;
+    color: #555;
+}
+
+.order-link {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+}
+
+.order-link i {
+    font-size: 11px;
+}
+
+.account-info {
+    margin: 180px 0 50px;
+}
+
+.account-info input {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
 
 /* ==================================== footer ====================================== */
 footer a:hover {

@@ -25,6 +25,52 @@ input:focus {
 }
 
 /* ============================== header ============================== */
+/* ======================== login & signup ======================== */
+/* ======================== login & signup ======================== */
+.user-box {
+    width: 260px;
+    border-radius: 8px;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.avatar-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #6bbf47;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.user-item i {
+    width: 20px;
+    margin-right: 8px;
+}
+.user-item:hover {
+    background: #f2f4f7;
+    border-radius: 6px;
+}
+
+.login-cart {
+    position: relative;
+}
+
+#user-box {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    box-shadow: 2px 2px 8px;
+    display: none;
+}
+
+.login-hover:hover #user-box {
+    display: block;
+}
+
 /* ======================== categories ======================== */
 .dropdown-toggle:hover .dropdown-menu {
     display: block;
@@ -137,8 +183,8 @@ input:focus {
 }
 
 .demand img {
-    width: 100px ;
-    height: 100px ;
+    width: 100px;
+    height: 100px;
 }
 
 .laptop-branchs img {
