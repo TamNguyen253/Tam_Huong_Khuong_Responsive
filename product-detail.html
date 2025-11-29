@@ -21,7 +21,7 @@
         />
 
         <!-- style css -->
-        <link rel="stylesheet" href="assets/css/cart.css" />
+        <link rel="stylesheet" href="assets/css/index.css" />
 
         <!-- responsive css -->
         <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -138,9 +138,9 @@
                                 </a>
                             </li>
 
-                            <!-- cart -->
+                            <!-- cart mini -->
                             <li class="">
-                                <a class="" aria-current="page" href="#">
+                                <a class="" aria-current="page" href="cart.html">
                                     <div class="nav-item ms-3 d-inline-block cart-hover">
                                         <i class="bi bi-bag text-black"></i>
                                         <span class="text-black">Giỏ hàng</span>
@@ -714,80 +714,191 @@
 
         <!-- main -->
         <main>
-            <section class="cart-page">
-                <div class="container my-4">
-                    <h4 class="mb-4"><i class="bi bi-cart-check"></i> Giỏ hàng của bạn</h4>
+            <!-- main banner -->
+            <section class="main-banner">
+                <div class="container">
+                    <div class="row product-card p-4">
+                        <div class="col-12 col-md-6 col-xl-5 mb-4">
+                            <div class="mb-3 d-flex justify-content-center">
+                                <img
+                                    id="mainImage"
+                                    src="assets/img/laptops/laptop5.webp"
+                                    class="main-image img-fluid"
+                                    alt="Laptop Asus ROG Strix G18"
+                                />
+                            </div>
 
-                    <div class="row justify-content-between">
-                        <!-- sản phẩm -->
-                        <div class="col-lg-9">
-                            <div class="card p-3 mb-3">
-                                <table class="t">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th style="width: 40%">Sản phẩm</th>
-                                            <th class="ps-3">Hình</th>
-                                            <th>Số lượng</th>
-                                            <th class="ps-3">Giá tiền</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="border-bottom">
-                                            <th>1</th>
-                                            <td class="line-clamp mt-3" style="line-height: 1.8">
-                                                Laptop Lenovo ThinkPad E14 Gen 7 - 21SX0031VN (Ultra 7-255H/ 32GB/ 512GB/ Windows 11 Home)
-                                            </td>
-                                            <td style="width: 15%"><img src="assets/img/laptops/laptop7.webp" alt="" style="width: 80px" /></td>
-                                            <td class="" style="width: 10%">
-                                                <div
-                                                    class="border border-2 border-black d-flex justify-content-center align-items-center gap-3 rounded-4"
-                                                    style="max-width: 100px; max-height: 50px"
-                                                >
-                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-dash"></i></button>
-                                                    <span>1</span>
-                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-plus-lg"></i></button>
-                                                </div>
-                                            </td>
-                                            <td class="ps-3 text-danger fs-5 fw-bold">30.000.000đ</td>
-                                        </tr>
-                                        <tr class="">
-                                            <th>2</th>
-                                            <td class="line-clamp mt-3" style="line-height: 1.8">
-                                                Laptop Lenovo ThinkPad E14 Gen 7 - 21SX0031VN (Ultra 7-255H/ 32GB/ 512GB/ Windows 11 Home)
-                                            </td>
-                                            <td style="width: 15%"><img src="assets/img/laptops/laptop8.webp" alt="" style="width: 80px" /></td>
-                                            <td class="" style="width: 10%">
-                                                <div
-                                                    class="border border-2 border-black d-flex justify-content-center align-items-center gap-3 rounded-4"
-                                                    style="max-width: 100px; max-height: 50px"
-                                                >
-                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-dash"></i></button>
-                                                    <span>1</span>
-                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-plus-lg"></i></button>
-                                                </div>
-                                            </td>
-                                            <td class="ps-3 text-danger fs-5 fw-bold">35.000.000đ</td>
-                                        </tr>
-                                    </tbody>
+                            <div class="row g-2 justify-content-center">
+                                <div class="col-3">
+                                    <img
+                                        src="assets/img/laptops/laptop5.webp"
+                                        class="img-fluid thumbnail-img active"
+                                        data-full-src="img/LTGM (4).png"
+                                        alt="Thumbnail 1"
+                                    />
+                                </div>
+                                <div class="col-3">
+                                    <img
+                                        src="assets/img/laptops/laptop5.webp"
+                                        class="img-fluid thumbnail-img"
+                                        data-full-src="img/LTGM (4).1.webp"
+                                        alt="Thumbnail 2"
+                                    />
+                                </div>
+                                <div class="col-3">
+                                    <img
+                                        src="assets/img/laptops/laptop5.webp"
+                                        class="img-fluid thumbnail-img"
+                                        data-full-src="img/LTGM (4).2.webp"
+                                        alt="Thumbnail 3"
+                                    />
+                                </div>
+                                <div class="col-3">
+                                    <img
+                                        src="assets/img/laptops/laptop5.webp"
+                                        class="img-fluid thumbnail-img"
+                                        data-full-src="img/LTGM (4).3.webp"
+                                        alt="Thumbnail 4"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <table class="mt-4 w-auto gap-2">
+                                    <tr>
+                                        <td>CPU: Intel® Core™ Ultra 9-275HX (2.7 GHz - 5.4 GHz/ 36MB/ 24 nhân, 24 luồng)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NPU: Intel® AI Boost 13 TOPS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VGA: GeForce RTX™ 5070 8GB GDDR7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RAM: 2 x 16GB 5600MHz DDR5 (Hỗ trợ tối đa 64GB)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Màn hình: 18" WQXGA (2560 x 1600) IPS, 240Hz, Màn hình chống lóa, 500 nits, G-Sync, 100% DCI-P3)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ổ cứng: 1TB SSD M.2 NVMe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Khác: Bàn phím gaming RGB Per-Key với phím Copilot, FHD webcam, Dolby Atmos, Intel AI</td>
+                                    </tr>
+                                    <tr>
+                                        <td>OS: Windows 11 Home</td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
-                            <div class="card p-3 mb-3">
-                                <h5 class="mb-3">Tổng thành tiền</h5>
-                                <div class="d-flex justify-content-between">
-                                    <span>Tổng tạm tính</span>
-                                    <span id="subtotal" class="fw-bold">65.000.000₫</span>
+                        <div class="col-12 col-md-6 col-xl-7">
+                            <h1 class="h3 fw-bold">
+                                Laptop Asus ROG Strix G18 G815LP-S9102W (Ultra 9 275HX/ GeForce RTX™ 5070/ 32GB/ 1TB/ Windows 11)
+                            </h1>
+                            <p class="text-muted">Ultra 9 275HX/ GeForce RTX™ 5070/ 32GB/ 1TB/ Windows 11</p>
+                            <p>Thương hiệu: <span class="fw-bold text-primary">ASUS</span> | SKU: 251009149</p>
+
+                            <hr />
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">MÀU SẮC:</label>
+                                <span class="badge bg-secondary fw-bold">XÁM</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <span class="price-text">55.490.000₫</span>
+                                <span class="original-price ms-2">56.990.000₫</span>
+                                <span class="badge bg-danger discount-badge">-3%</span>
+                            </div>
+
+                            <div class="mb-4 d-flex">
+                                <button class="btn btn-primary btn-buy flex-grow-1">MUA NGAY</button>
+                                <button class="btn btn-outline-primary btn-add-cart flex-grow-1"><i class="bi bi-cart"></i>THÊM VÀO GIỎ HÀNG</button>
+                            </div>
+                            <hr />
+                            <div class="p-5 bg-light border rounded">
+                                <h5 class="mb-3 text-success">BẠN SẼ NHẬN ĐƯỢC</h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">1 Mã giảm 200.000đ cho phần mềm Microsoft 365 Personal...</li>
+                                    <li>1 Mã giảm 200.000đ cho một số máy in Canon</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="mt-5" />
+
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="desc-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#desc"
+                                        type="button"
+                                        role="tab"
+                                    >
+                                        Mô tả Sản phẩm
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="spec-tab" data-bs-toggle="tab" data-bs-target="#spec" type="button" role="tab">
+                                        Thông số Kỹ thuật
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content border border-top-0 p-3 bg-light" id="myTabContent">
+                                <div class="tab-pane fade show active" id="desc" role="tabpanel">
+                                    <h4 class="mb-3">Điểm nổi bật</h4>
+                                    <ul>
+                                        <li>
+                                            <span class="fw-bold">Hiệu năng đỉnh cao:</span> Trang bị CPU Intel® Core™ Ultra 9 275HX 24 nhân, 24 luồng
+                                            và GPU GeForce RTX 5070, cung cấp sức mạnh vượt trội cho gaming và các tác vụ nặng.
+                                        </li>
+                                        <li>
+                                            <span class="fw-bold">Màn hình ROG Nebula 18 inch:</span> Tấm nền IPS độ phân giải 2.5K (2560x1600), tần
+                                            số quét 240Hz, độ sáng 500 nits và độ phủ màu 100% DCI-P3.
+                                        </li>
+                                        <li>
+                                            <span class="fw-bold">Tăng tốc với AI:</span> Tích hợp NPU Intel AI Boost với 13 TOPS, tối ưu hóa các tác
+                                            vụ trí tuệ nhân tạo.
+                                        </li>
+                                    </ul>
                                 </div>
-                                <hr />
-                                <div class="d-flex justify-content-between">
-                                    <strong>Thanh toán</strong>
-                                    <strong id="total" class="text-danger fs-5">65.000.000₫</strong>
+                                <div class="tab-pane fade" id="spec" role="tabpanel">
+                                    <h4 class="mb-3">Thông tin chi tiết</h4>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" style="width: 30%">CPU</th>
+                                                <td>Intel® Core™ Ultra 9 275HX (2.7 GHz - 5.4 GHz / 36MB / 24 nhân, 24 luồng)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">GPU</th>
+                                                <td>GeForce RTX™ 5070 8GB GDDR7 (1475MHz, 115W, Intel® Graphics)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">RAM</th>
+                                                <td>32GB (2 x 16GB) 5600MHz DDR5</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ổ cứng</th>
+                                                <td>1TB SSD M.2 NVMe</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Màn hình</th>
+                                                <td>18" WQXGA (2560 x 1600) IPS, 240Hz, 100% DCI-P3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Hệ điều hành</th>
+                                                <td>Windows 11 Home</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <p class="text-muted small mt-2">(Đã bao gồm VAT)</p>
-                                <button class="btn btn-primary w-100 mt-2">THANH TOÁN</button>
                             </div>
                         </div>
                     </div>
@@ -911,7 +1022,7 @@
         <!-- products js -->
         <script src="JS/data.js"></script>
 
-        <!-- cart js -->
+        <!-- product-detail js -->
         <script src="JS/cart.js"></script>
 
         <!-- common js -->

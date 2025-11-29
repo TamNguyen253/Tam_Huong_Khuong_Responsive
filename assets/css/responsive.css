@@ -41,6 +41,11 @@
     .banner-laptop {
         margin-top: -20px;
     }
+
+    /* ================== cart page ================== */
+    .cart-page {
+        margin-top: 120px;
+    }
 }
 
 /* Tablet */
