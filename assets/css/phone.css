@@ -1,0 +1,268 @@
+/* ============================== common ============================== */
+a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 250px;
+}
+
+input:focus {
+    border-color: #ccc !important;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* ============================== header ============================== */
+
+/* ======================== login & signup ======================== */
+.user-box {
+    width: 260px;
+    border-radius: 8px;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.avatar-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #6bbf47;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.user-item i {
+    width: 20px;
+    margin-right: 8px;
+}
+.user-item:hover {
+    background: #f2f4f7;
+    border-radius: 6px;
+}
+
+.login-cart {
+    position: relative;
+}
+
+#user-box {
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    box-shadow: 2px 2px 8px;
+    display: none;
+}
+
+.login-hover:hover #user-box {
+    display: block;
+}
+
+/* ======================== cart ======================== */
+.cart-hover {
+    position: relative;
+}
+
+.cart-hover:hover .cart-box {
+    display: block;
+}
+
+.cart-box {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    width: 340px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    display: none;
+}
+
+/* khung scroll sản phẩm */
+.product-scroll {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* chỉ khung cho hình */
+.product-img-wrap {
+    width: 200px;
+    height: 90px;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: #fff; /* tránh lộ nền */
+}
+
+.cart-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ảnh không méo, crop chuẩn */
+    border-radius: 4px;
+}
+
+/* Khuyến mãi thụt lề */
+.promo-list {
+    padding-left: 28px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.promo-item {
+    font-size: 13px;
+}
+
+.promo-item i {
+    margin-right: 6px;
+}
+
+.cart-total {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* ======================== categories ======================== */
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+.categories .item:hover {
+    background: #ffffff;
+}
+
+.item {
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.link-item {
+    color: black;
+}
+
+.social-btns {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+}
+
+#scrollTopBtn {
+    background: none;
+}
+
+.fm-categories:hover {
+    background: #ffffff;
+}
+
+.fm-categories {
+    position: relative;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    left: 13px;
+    width: 1320px;
+    height: 200px;
+    background: white;
+}
+
+.fm-menu-lap {
+    position: absolute;
+    left: -152px;
+}
+
+.fm-menu-accessory {
+    position: absolute;
+    left: -317px;
+}
+
+.fm-menu-smartwatch {
+    position: absolute;
+    left: -482px;
+}
+
+.fm-menu-watch {
+    position: absolute;
+    left: -647px;
+}
+
+.fm-tablet-lap {
+    position: absolute;
+    left: -812px;
+}
+
+.fm-menu-monitor {
+    position: absolute;
+    left: -977px;
+}
+
+.fm-menu-sim {
+    position: absolute;
+    left: -1142px;
+}
+
+.fm-categories:hover .menu-dropdown {
+    display: flex;
+}
+
+.menu-dropdown a {
+    color: black;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.menu-dropdown a:hover {
+    color: blue;
+}
+
+.menu-mobi .nav-item:hover {
+    background: #fff;
+}
+
+/* banner */
+.main-banner {
+    margin-top: 160px;
+}
+
+/* ==================================== main ====================================== */
+.demand a {
+    max-width: 180px;
+}
+
+.demand img {
+    width: 100px;
+    height: 100px;
+}
+
+.laptop-branchs img {
+    width: 98px;
+    height: 20px;
+}
+
+/* ==================================== footer ====================================== */
+footer a:hover {
+    color: blue !important;
+}

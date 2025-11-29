@@ -99,7 +99,7 @@
                         </form>
 
                         <!-- login & cart -->
-                        <ul class="login-cart navbar-nav ms-auto mb-lg-0 flex-row">
+                        <ul class="login-cart navbar-nav ms-auto mb-lg-0 flex-row align-items-center">
                             <li class="nav-item">
                                 <a aria-current="page" href="login.html" id="link-login">
                                     <div class="nav-link active ms-2 ps-lg-0 login-hover d-inline-block">
@@ -137,10 +137,69 @@
                                     </div>
                                 </a>
                             </li>
-                            <li class="nav-item ms-3">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
-                                    <i class="bi bi-bag"></i>
-                                    <span>Giỏ hàng</span>
+
+                            <!-- cart mini -->
+                            <li class="">
+                                <a class="" aria-current="page" href="cart.html">
+                                    <div class="nav-item ms-3 d-inline-block cart-hover">
+                                        <i class="bi bi-bag text-black"></i>
+                                        <span class="text-black">Giỏ hàng</span>
+
+                                        <div class="cart-box">
+                                            <!-- vùng scroll -->
+                                            <div class="product-scroll">
+                                                <!-- sản phẩm 1 -->
+                                                <div class="mb-2">
+                                                    <div class="d-flex">
+                                                        <div class="product-img-wrap">
+                                                            <img src="assets/img/laptops/laptop6.webp" alt="Laptop" class="cart-product-img" />
+                                                        </div>
+
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold small">
+                                                                Máy tính xách tay/ Laptop HP 14-ep1011TU - 9Z2W3PA (Core 5-120U) (Bạc)
+                                                            </div>
+                                                            <div class="small text-muted">
+                                                                Bạc<br />
+                                                                Số lượng 1
+                                                            </div>
+                                                            <div class="fw-bold text-danger">15.890.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- sản phẩm 2 -->
+                                                <div class="mb-2">
+                                                    <div class="d-flex">
+                                                        <!-- khung hình -->
+                                                        <div class="product-img-wrap">
+                                                            <img src="assets/img/laptops/laptop7.webp" alt="Laptop" class="cart-product-img" />
+                                                        </div>
+
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold small">
+                                                                Máy tính xách tay/ Laptop HP 14-ep1011TU - 9Z2W3PA (Core 5-120U) (Bạc)
+                                                            </div>
+                                                            <div class="small text-muted">
+                                                                Đen<br />
+                                                                Số lượng 1
+                                                            </div>
+                                                            <div class="fw-bold text-danger">20.890.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- tổng tiền -->
+                                            <div class="cart-total d-flex justify-content-between align-items-center mb-2">
+                                                <span class="small">Tổng tiền (2) sản phẩm</span>
+                                                <span class="fw-bold text-danger">36.780.000đ</span>
+                                            </div>
+
+                                            <!-- nút xem giỏ hàng -->
+                                            <a href="cart.html" class="btn btn-primary w-100">Xem giỏ hàng</a>
+                                        </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -149,7 +208,7 @@
                         <ul class="menu-mobi navbar-nav ms-auto mb-lg-0 d-lg-none">
                             <!-- item 1 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="phone.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
                                         <path
                                             fill="#000000"
@@ -161,7 +220,7 @@
                             </li>
                             <!-- item 2 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="laptop.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
                                         <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                                         <path
@@ -174,42 +233,42 @@
                             </li>
                             <!-- item 3 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="accessory.html">
                                     <i class="bi bi-headphones"></i>
                                     <span>Phụ kiện</span>
                                 </a>
                             </li>
                             <!-- item 4 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="smartwatch.html">
                                     <i class="bi bi-smartwatch"></i>
                                     <span>SmartWatch</span>
                                 </a>
                             </li>
                             <!-- item 5 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="watch.html">
                                     <i class="bi bi-watch"></i>
                                     <span>Đồng hồ</span>
                                 </a>
                             </li>
                             <!-- item 6 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="tablet.html">
                                     <i class="bi bi-tablet-landscape"></i>
                                     <span>Tablet</span>
                                 </a>
                             </li>
                             <!-- item 7 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="monitor.html">
                                     <i class="bi bi-pc-display-horizontal"></i>
                                     <span>Màn hình</span>
                                 </a>
                             </li>
                             <!-- item 8 -->
                             <li class="nav-item">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
+                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="sim.html">
                                     <i class="bi bi-sim"></i>
                                     <span>Sim, thẻ cào</span>
                                 </a>
@@ -225,7 +284,7 @@
                     <div class="row text-center">
                         <!-- phone -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 pb-3 pt-2 w-100 w-100">
+                            <a href="phone.html" class="dropdown-toggle text-black pb-3 pt-2 pb-3 pt-2 w-100 w-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
                                     <path
                                         fill="#000000"
@@ -282,7 +341,7 @@
 
                         <!-- Laptop -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="laptop.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 20px">
                                     <path
                                         fill="#000000"
@@ -338,7 +397,7 @@
 
                         <!-- accessory -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="accessory.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-headphones"></i>
                                 <span>Phụ kiện</span>
                             </a>
@@ -390,7 +449,7 @@
 
                         <!-- smartwatch -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="smartwatch.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-smartwatch"></i>
                                 <span>SmartWatch</span>
                             </a>
@@ -442,7 +501,7 @@
 
                         <!-- watch -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="watch.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-watch"></i>
                                 <span>Đồng hồ</span>
                             </a>
@@ -494,7 +553,7 @@
 
                         <!-- tablet -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="tablet.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-tablet-landscape"></i>
                                 <span>Tablet</span>
                             </a>
@@ -546,7 +605,7 @@
 
                         <!-- monitor -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="monitor.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-pc-display-horizontal"></i>
                                 <span>Màn hình</span>
                             </a>
@@ -598,7 +657,7 @@
 
                         <!-- sim -->
                         <div class="col px-0 fm-categories">
-                            <a href="" class="dropdown-toggle text-black pb-3 pt-2 w-100">
+                            <a href="sim.html" class="dropdown-toggle text-black pb-3 pt-2 w-100">
                                 <i class="bi bi-sim"></i>
                                 <span>Sim, thẻ cào</span>
                             </a>
