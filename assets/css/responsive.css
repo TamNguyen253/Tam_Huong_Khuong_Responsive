@@ -56,7 +56,7 @@
 @media (max-width: 767.98px) {
     /* ============== header cart hover ============== */
     .cart-box {
-        left: -50%;
+        left: -110px;
     }
 
     /* ============== account info ============== */
