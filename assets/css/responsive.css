@@ -54,4 +54,13 @@
 
 /* mobi */
 @media (max-width: 767.98px) {
+    /* ============== header cart hover ============== */
+    .cart-box {
+        left: 0;
+    }
+
+    /* ============== account info ============== */
+    #v-pills-tab {
+        padding: 5px !important;
+    }
 }

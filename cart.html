@@ -99,7 +99,7 @@
                         </form>
 
                         <!-- login & cart -->
-                        <ul class="login-cart navbar-nav ms-auto mb-lg-0 flex-row">
+                        <ul class="login-cart navbar-nav ms-auto mb-lg-0 flex-row align-items-center">
                             <li class="nav-item">
                                 <a aria-current="page" href="login.html" id="link-login">
                                     <div class="nav-link active ms-2 ps-lg-0 login-hover d-inline-block">
@@ -123,23 +123,83 @@
                                                     <i class="bi bi-person"></i> Thông tin tài khoản
                                                 </a>
 
-                                                <a href="#" class="list-group-item border-0 user-item">
+                                                <a href="account-info.html" class="list-group-item border-0 user-item">
                                                     <i class="bi bi-card-checklist"></i> Lịch sử mua hàng
                                                 </a>
 
-                                                <a href="#" class="list-group-item border-0 user-item"> <i class="bi bi-heart"></i> Hỗ trợ </a>
+                                                <a href="account-info.html" class="list-group-item border-0 user-item">
+                                                    <i class="bi bi-heart"></i> Hỗ trợ
+                                                </a>
                                             </div>
-
                                             <!-- Login Logout -->
                                             <a href="login.html" class="btn btn-primary w-100 mt-2">Đăng nhập</a>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            <li class="nav-item ms-3">
-                                <a class="nav-link active ps-2 ps-lg-0" aria-current="page" href="#">
-                                    <i class="bi bi-bag"></i>
-                                    <span>Giỏ hàng</span>
+
+                            <!-- cart mini -->
+                            <li class="">
+                                <a class="" aria-current="page" href="cart.html">
+                                    <div class="nav-item ms-3 d-inline-block cart-hover">
+                                        <i class="bi bi-bag text-black"></i>
+                                        <span class="text-black">Giỏ hàng</span>
+
+                                        <div class="cart-box">
+                                            <!-- vùng scroll -->
+                                            <div class="product-scroll">
+                                                <!-- sản phẩm 1 -->
+                                                <div class="mb-2">
+                                                    <div class="d-flex">
+                                                        <div class="product-img-wrap">
+                                                            <img src="assets/img/laptops/laptop6.webp" alt="Laptop" class="cart-product-img" />
+                                                        </div>
+
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold small">
+                                                                Máy tính xách tay/ Laptop HP 14-ep1011TU - 9Z2W3PA (Core 5-120U) (Bạc)
+                                                            </div>
+                                                            <div class="small text-muted">
+                                                                Bạc<br />
+                                                                Số lượng 1
+                                                            </div>
+                                                            <div class="fw-bold text-danger">15.890.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- sản phẩm 2 -->
+                                                <div class="mb-2">
+                                                    <div class="d-flex">
+                                                        <!-- khung hình -->
+                                                        <div class="product-img-wrap">
+                                                            <img src="assets/img/laptops/laptop7.webp" alt="Laptop" class="cart-product-img" />
+                                                        </div>
+
+                                                        <div class="flex-grow-1">
+                                                            <div class="fw-semibold small">
+                                                                Máy tính xách tay/ Laptop HP 14-ep1011TU - 9Z2W3PA (Core 5-120U) (Bạc)
+                                                            </div>
+                                                            <div class="small text-muted">
+                                                                Đen<br />
+                                                                Số lượng 1
+                                                            </div>
+                                                            <div class="fw-bold text-danger">20.890.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- tổng tiền -->
+                                            <div class="cart-total d-flex justify-content-between align-items-center mb-2">
+                                                <span class="small">Tổng tiền (2) sản phẩm</span>
+                                                <span class="fw-bold text-danger">36.780.000đ</span>
+                                            </div>
+
+                                            <!-- nút xem giỏ hàng -->
+                                            <a href="cart.html" class="btn btn-primary w-100">Xem giỏ hàng</a>
+                                        </div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -668,18 +728,21 @@
                                             <th>STT</th>
                                             <th style="width: 40%">Sản phẩm</th>
                                             <th class="ps-3">Hình</th>
-                                            <th>Số lượng</th>
-                                            <th class="ps-3">Giá tiền</th>
+                                            <th class="d-none d-md-table-cell">Số lượng</th>
+                                            <th class="ps-5 d-none d-md-table-cell">Giá tiền</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="border-bottom">
-                                            <th>1</th>
+                                        <!-- item 1 -->
+                                        <tr class="">
+                                            <!-- sp & img -->
+                                            <td>1</td>
                                             <td class="line-clamp mt-3" style="line-height: 1.8">
                                                 Laptop Lenovo ThinkPad E14 Gen 7 - 21SX0031VN (Ultra 7-255H/ 32GB/ 512GB/ Windows 11 Home)
                                             </td>
                                             <td style="width: 15%"><img src="assets/img/laptops/laptop7.webp" alt="" style="width: 80px" /></td>
-                                            <td class="" style="width: 10%">
+                                            <!-- sl & gt md -->
+                                            <td class="d-none d-md-table-cell" style="width: 10%">
                                                 <div
                                                     class="border border-2 border-black d-flex justify-content-center align-items-center gap-3 rounded-4"
                                                     style="max-width: 100px; max-height: 50px"
@@ -689,15 +752,37 @@
                                                     <button class="border-0 bg-light rounded-pill"><i class="bi-plus-lg"></i></button>
                                                 </div>
                                             </td>
-                                            <td class="ps-3 text-danger fs-5 fw-bold">30.000.000đ</td>
+                                            <td class="ps-5 text-danger fs-5 fw-bold d-none d-md-table-cell">30.000.000đ</td>
                                         </tr>
+                                        <!-- sl & gt sm -->
                                         <tr class="">
-                                            <th>2</th>
+                                            <th class="d-table-cell d-md-none">Số lượng</th>
+                                            <td class="d-table-cell d-md-none" style="width: 10%">
+                                                <div
+                                                    class="border border-2 border-black d-flex justify-content-center align-items-center gap-3 rounded-4"
+                                                    style="max-width: 100px; max-height: 50px"
+                                                >
+                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-dash"></i></button>
+                                                    <span>1</span>
+                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-plus-lg"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="ps-3 d-table-cell d-md-none">Giá tiền</th>
+                                            <td class="ps-3 text-danger fs-5 fw-bold d-table-cell d-md-none">30.000.000đ</td>
+                                        </tr>
+
+                                        <!-- item 2 -->
+                                        <tr class="">
+                                            <!-- sp & img -->
+                                            <td>1</td>
                                             <td class="line-clamp mt-3" style="line-height: 1.8">
                                                 Laptop Lenovo ThinkPad E14 Gen 7 - 21SX0031VN (Ultra 7-255H/ 32GB/ 512GB/ Windows 11 Home)
                                             </td>
                                             <td style="width: 15%"><img src="assets/img/laptops/laptop8.webp" alt="" style="width: 80px" /></td>
-                                            <td class="" style="width: 10%">
+                                            <!-- sl & gt md -->
+                                            <td class="d-none d-md-table-cell" style="width: 10%">
                                                 <div
                                                     class="border border-2 border-black d-flex justify-content-center align-items-center gap-3 rounded-4"
                                                     style="max-width: 100px; max-height: 50px"
@@ -707,7 +792,25 @@
                                                     <button class="border-0 bg-light rounded-pill"><i class="bi-plus-lg"></i></button>
                                                 </div>
                                             </td>
-                                            <td class="ps-3 text-danger fs-5 fw-bold">35.000.000đ</td>
+                                            <td class="ps-5 text-danger fs-5 fw-bold d-none d-md-table-cell">30.000.000đ</td>
+                                        </tr>
+                                        <!-- sl & gt sm -->
+                                        <tr class="">
+                                            <th class="d-table-cell d-md-none">Số lượng</th>
+                                            <td class="d-table-cell d-md-none" style="width: 10%">
+                                                <div
+                                                    class="border border-2 border-black d-flex justify-content-center align-items-center gap-3 rounded-4"
+                                                    style="max-width: 100px; max-height: 50px"
+                                                >
+                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-dash"></i></button>
+                                                    <span>1</span>
+                                                    <button class="border-0 bg-light rounded-pill"><i class="bi-plus-lg"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="ps-3 d-table-cell d-md-none">Giá tiền</th>
+                                            <td class="ps-3 text-danger fs-5 fw-bold d-table-cell d-md-none">30.000.000đ</td>
                                         </tr>
                                     </tbody>
                                 </table>
