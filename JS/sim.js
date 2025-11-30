@@ -1,15 +1,15 @@
 // ============================= show outstanding products =============================
-const outProData = products.filter((e) => e.category === "laptop").slice(0, 4);
+const outProData = products.filter((e) => e.category === "sim").slice(0, 4);
 const outPro = document.getElementById("showOutPro");
 
-outProData.forEach((e) => {
+outProData.forEach((e, index) => {
     outPro.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${index + 57}">
                 <div class="d-flex justify-content-center">
                     <img
-                        src="assets/img/laptops/${e.pic}.webp"
+                        src="assets/img/sims/${e.pic}.webp"
                         class="card-img-top"
                         style="width: 200px"
                         alt="..."
@@ -32,17 +32,17 @@ outProData.forEach((e) => {
 });
 
 // ============================= show laptop page =============================
-const lapPageData = products.filter((e) => e.category === "laptop");
-const laptopList = document.getElementById("showLapPage");
+const simPageData = products.filter((e) => e.category === "sim");
+const simList = document.getElementById("showLapPage");
 
-lapPageData.forEach((e) => {
-    laptopList.innerHTML += `
+simPageData.forEach((e, index) => {
+    simList.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3 border-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${index + 57}">
                 <div class="d-flex justify-content-center">
                     <img
-                        src="assets/img/laptops/${e.pic}.webp"
+                        src="assets/img/sims/${e.pic}.webp"
                         class="card-img-top"
                         style="width: 200px"
                         alt="..."

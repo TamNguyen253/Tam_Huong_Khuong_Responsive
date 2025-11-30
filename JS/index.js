@@ -37,7 +37,7 @@ for (let i = 0; i < flashSales.length; i++) {
     flashSaleList.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item" data-id="${i}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/phones/${flashSales[i].pic}.jpg"
@@ -70,7 +70,7 @@ for (let i = 0; i < phoneData.length; i++) {
     phones.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${i}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/phones/${phoneData[i].pic}.jpg"
@@ -99,11 +99,11 @@ for (let i = 0; i < phoneData.length; i++) {
 const laptopData = products.filter((e) => e.category === "laptop").slice(0, 4);
 const laptops = document.querySelector("#showLaptop");
 
-laptopData.forEach((e) => {
+laptopData.forEach((e, index) => {
     laptops.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item  link-prod"  data-id="${index}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/laptops/${e.pic}.webp"
@@ -132,11 +132,11 @@ laptopData.forEach((e) => {
 const smartwatchData = products.filter((e) => e.category === "smartwatch").slice(0, 4);
 const smartwatchs = document.getElementById("showSmartwatch");
 
-smartwatchData.forEach((e) => {
+smartwatchData.forEach((e, index) => {
     smartwatchs.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item" data-id="${index}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/smartwatchs/${e.pic}.jpg"
@@ -165,11 +165,11 @@ smartwatchData.forEach((e) => {
 const monitorData = products.filter((e) => e.category === "monitor").slice(0, 4);
 const monitors = document.getElementById("showMonitor");
 
-monitorData.forEach((e) => {
+monitorData.forEach((e, index) => {
     monitors.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${index}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/monitors/${e.pic}.webp"

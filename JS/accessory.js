@@ -2,11 +2,11 @@
 const outProData = products.filter((e) => e.category === "accessory").slice(0, 4);
 const outPro = document.getElementById("showOutPro");
 
-outProData.forEach((e) => {
+outProData.forEach((e, index) => {
     outPro.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod"  data-id="${index + 41}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/accessories/${e.pic}.webp"
@@ -35,11 +35,11 @@ outProData.forEach((e) => {
 const lapPageData = products.filter((e) => e.category === "accessory");
 const laptopList = document.getElementById("showLapPage");
 
-lapPageData.forEach((e) => {
+lapPageData.forEach((e, index) => {
     laptopList.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3 border-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item  link-prod" data-id="${index + 41}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/accessories/${e.pic}.webp"

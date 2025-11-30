@@ -70,6 +70,76 @@ input:focus {
     display: block;
 }
 
+/* ======================== cart ======================== */
+.cart-hover {
+    position: relative;
+}
+
+.cart-hover:hover .cart-box {
+    display: block;
+}
+
+.cart-box {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    width: 340px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    display: none;
+}
+
+/* khung scroll sản phẩm */
+.product-scroll {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* chỉ khung cho hình */
+.product-img-wrap {
+    width: 200px;
+    height: 90px;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: #fff; /* tránh lộ nền */
+}
+
+.cart-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ảnh không méo, crop chuẩn */
+    border-radius: 4px;
+}
+
+/* Khuyến mãi thụt lề */
+.promo-list {
+    padding-left: 28px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.promo-item {
+    font-size: 13px;
+}
+
+.promo-item i {
+    margin-right: 6px;
+}
+
+.cart-total {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
 /* ======================== categories ======================== */
 .dropdown-toggle:hover .dropdown-menu {
     display: block;

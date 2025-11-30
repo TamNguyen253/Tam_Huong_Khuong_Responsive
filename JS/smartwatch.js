@@ -2,11 +2,11 @@
 const outProData = products.filter((e) => e.category === "smartwatch").slice(0, 4);
 const outPro = document.getElementById("showOutPro");
 
-outProData.forEach((e) => {
+outProData.forEach((e, index) => {
     outPro.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${index + 17}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/smartwatchs/${e.pic}.jpg"
@@ -35,11 +35,11 @@ outProData.forEach((e) => {
 const smartwatchPageData = products.filter((e) => e.category === "smartwatch");
 const smartwatchList = document.getElementById("showLapPage");
 
-smartwatchPageData.forEach((e) => {
+smartwatchPageData.forEach((e, index) => {
     smartwatchList.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3 border-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${index + 17}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/smartwatchs/${e.pic}.jpg"

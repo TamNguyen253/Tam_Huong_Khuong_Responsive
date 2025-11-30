@@ -2,11 +2,11 @@
 const outProData = products.filter((e) => e.category === "phone").slice(0, 4);
 const outPro = document.getElementById("showOutPro");
 
-outProData.forEach((e) => {
+outProData.forEach((e, index) => {
     outPro.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${index + 1}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/phones/${e.pic}.jpg"
@@ -32,14 +32,14 @@ outProData.forEach((e) => {
 });
 
 // ============================= show laptop page =============================
-const lapPageData = products.filter((e) => e.category === "phone");
-const laptopList = document.getElementById("showLapPage");
+const phonePageData = products.filter((e) => e.category === "phone");
+const phoneList = document.getElementById("showLapPage");
 
-lapPageData.forEach((e) => {
-    laptopList.innerHTML += `
+phonePageData.forEach((e, index) => {
+    phoneList.innerHTML += `
     <div class="col-md-6 col-lg-3 item my-3 border-3">
         <div class="card pt-3 bg-white">
-            <a href="" class="link-item">
+            <a class="link-item link-prod" data-id="${index + 1}">
                 <div class="d-flex justify-content-center">
                     <img
                         src="assets/img/phones/${e.pic}.jpg"

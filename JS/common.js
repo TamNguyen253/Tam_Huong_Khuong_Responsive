@@ -23,3 +23,13 @@ scrollTopBtn.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// ==================== gán index cho trang chi tiết theo từng sp ====================
+document.querySelectorAll(".link-prod").forEach((item) => {
+    item.addEventListener("click", function (e) {
+        e.preventDefault(); // chặn href
+        const id = this.getAttribute("data-id");
+        window.location.href = `product-detail.html?id=${id}`;
+    });
+});
+
